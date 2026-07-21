@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-21T07:20:20Z",
+  "updated_at": "2026-07-21T23:27:02Z",
   "kols": [
     {
       "id": "demo_kol",
@@ -718,6 +718,124 @@
         "en": "Shirahige Falls",
         "primary": "白ひげの滝"
       }
+    },
+    {
+      "type": "street",
+      "name": "和隆街",
+      "names": {
+        "primary": "和隆街",
+        "en": "Wo Lung Street",
+        "zh-Hant": "和隆街"
+      },
+      "aliases": [
+        "協香麵包西餅",
+        "麵包西餅店",
+        "雞腿包",
+        "麥包",
+        "聯和墟街市",
+        "Luen Wo Market",
+        "牛腩河",
+        "牛腩麵",
+        "冰室"
+      ],
+      "description": "街坊誠仔推介後面和隆街有小食店（片中到訪時約4:30才開門）。",
+      "tags": [
+        "fanling",
+        "luen-wo-hui",
+        "bakery",
+        "hong-kong",
+        "snack",
+        "chicken-leg-bun",
+        "market",
+        "estate",
+        "noodles",
+        "beef-brisket",
+        "cha-chaan-teng",
+        "street"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 752,
+        "quote": "後面和隆街 和隆街有一家小吃店"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "confidence": 0.7,
+      "needs_review": true,
+      "origin": "kol",
+      "id": "fanling_place"
+    },
+    {
+      "type": "person",
+      "name": "Pomato",
+      "names": {
+        "primary": "小薯茄",
+        "en": "Pomato",
+        "zh-Hant": "小薯茄"
+      },
+      "aliases": [
+        "小薯茄"
+      ],
+      "description": "香港 YouTube 頻道；本集在粉嶺玩街坊美食推薦挑戰。",
+      "tags": [
+        "kol",
+        "hong-kong",
+        "youtube"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 19,
+        "quote": "Hello 各位小薯茄 今天我們來到粉嶺"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "person": {
+        "role": "KOL / YouTube hosts",
+        "bio": "Hong Kong comedy/food YouTube channel 小薯茄",
+        "related_places": [
+          "fanling_hip_heung"
+        ]
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "hong_kong_pomato"
     }
   ]
 }
