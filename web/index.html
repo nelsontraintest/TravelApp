@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0d3a34" />
+    <title>Scouted — Nearby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="brand-bar">
+        <div class="brand">Scout<span>ed</span></div>
+        <p class="brand-sub">KOL travel spots near you</p>
+      </header>
+
+      <section class="panel">
+        <h1 class="hero-line">What’s around me?</h1>
+        <p class="muted">
+          Places your travel KOL mentioned — plus a few suggestions from spots
+          you liked.
+        </p>
+
+        <div class="controls">
+          <button class="btn btn-primary" id="locate" type="button">
+            Use my location
+          </button>
+
+          <div class="row">
+            <label class="field">
+              Radius
+              <select id="radius">
+                <option value="0.5">500 m</option>
+                <option value="1" selected>1 km</option>
+                <option value="2">2 km</option>
+                <option value="5">5 km</option>
+                <option value="15">15 km</option>
+              </select>
+            </label>
+            <label class="field">
+              Demo pin
+              <select id="demo">
+                <option value="">—</option>
+                <option value="hk-central">HK Central</option>
+                <option value="hk-tst">HK Tsim Sha Tsui</option>
+                <option value="tokyo">Tokyo Shibuya</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <p class="status" id="status"></p>
+      </section>
+
+      <div class="list" id="list" aria-live="polite"></div>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="active" href="./index.html">Nearby</a>
+      <a href="./swipe.html">Swipe</a>
+    </nav>
+
+    <script type="module" src="./js/nearby.js"></script>
+  </body>
+</html>

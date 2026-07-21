@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ScoutedPlacesDatabase",
+  "description": "Travel places extracted from KOL YouTube videos",
+  "type": "object",
+  "required": ["version", "updated_at", "places"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "kols": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "youtube_channel": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "places": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/place" }
+    }
+  },
+  "definitions": {
+    "place": {
+      "type": "object",
+      "required": ["id", "type", "name", "source"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": ["restaurant", "cafe", "shop", "street", "mall", "attraction", "hotel", "person", "product", "other"]
+        },
+        "name": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "description": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "source": {
+          "type": "object",
+          "required": ["youtube_url", "kol_id"],
+          "properties": {
+            "youtube_url": { "type": "string" },
+            "youtube_title": { "type": "string" },
+            "kol_id": { "type": "string" },
+            "timestamp_sec": { "type": ["number", "null"] },
+            "quote": { "type": "string" }
+          }
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "lat": { "type": ["number", "null"] },
+            "lng": { "type": ["number", "null"] },
+            "address": { "type": "string" },
+            "city": { "type": "string" },
+            "country": { "type": "string" },
+            "area": { "type": "string" }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "phone": { "type": "string" },
+            "website": { "type": "string" },
+            "instagram": { "type": "string" }
+          }
+        },
+        "enrichment": {
+          "type": "object",
+          "properties": {
+            "rating": { "type": ["number", "null"] },
+            "review_count": { "type": ["integer", "null"] },
+            "photos": { "type": "array", "items": { "type": "string" } },
+            "osm_url": { "type": "string" },
+            "google_place_id": { "type": "string" }
+          }
+        },
+        "person": {
+          "type": "object",
+          "properties": {
+            "role": { "type": "string" },
+            "bio": { "type": "string" },
+            "related_places": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "needs_review": { "type": "boolean" },
+        "origin": {
+          "type": "string",
+          "enum": ["kol", "like_preference"],
+          "description": "kol = from video; like_preference = recommended from user likes"
+        }
+      }
+    }
+  }
+}

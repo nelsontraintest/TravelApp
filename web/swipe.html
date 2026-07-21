@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0d3a34" />
+    <title>Scouted — Swipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="brand-bar">
+        <div class="brand">Scout<span>ed</span></div>
+        <p class="brand-sub">Like spots you want more of</p>
+      </header>
+
+      <section class="panel">
+        <h1 class="hero-line">Teach your taste</h1>
+        <p class="muted">
+          Swipe right on KOL places you like. Nearby will then surface similar
+          spots and label them as from your likes — not from the KOL.
+        </p>
+        <p class="status" id="status"></p>
+      </section>
+
+      <div class="deck-wrap" id="deck"></div>
+
+      <div class="swipe-actions">
+        <button class="btn btn-coral" id="nope" type="button">Nope</button>
+        <button class="btn btn-sea" id="like" type="button">Like</button>
+      </div>
+      <div class="row" style="margin-top: 0.75rem; justify-content: center">
+        <button class="btn btn-ghost" id="reset" type="button">
+          Reset likes
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html">Nearby</a>
+      <a class="active" href="./swipe.html">Swipe</a>
+    </nav>
+
+    <script type="module" src="./js/swipe.js"></script>
+  </body>
+</html>

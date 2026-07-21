@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-21T00:00:00Z",
+  "kols": [
+    {
+      "id": "demo_kol",
+      "name": "Demo Travel KOL",
+      "youtube_channel": "",
+      "notes": "Seed data for testing nearby + swipe. Replace by ingesting real videos with Hermes."
+    }
+  ],
+  "places": [
+    {
+      "id": "hk_tsim_sha_tsui_harbour",
+      "type": "attraction",
+      "name": "Tsim Sha Tsui Waterfront",
+      "aliases": ["TST Promenade", "星光大道附近"],
+      "description": "Harbour promenade with skyline views — classic vlog walk stop.",
+      "tags": ["harbour", "walk", "sunset", "hong-kong"],
+      "source": {
+        "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
+        "youtube_title": "Seed demo — Hong Kong waterfront",
+        "kol_id": "demo_kol",
+        "timestamp_sec": 120,
+        "quote": "Walk along the harbour before dinner."
+      },
+      "location": {
+        "lat": 22.2936,
+        "lng": 114.1722,
+        "address": "Tsim Sha Tsui Promenade, Kowloon",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Tsim Sha Tsui"
+      },
+      "contact": {},
+      "enrichment": {
+        "rating": 4.6,
+        "photos": []
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "hk_manor_maison",
+      "type": "cafe",
+      "name": "Manor Maison",
+      "aliases": [],
+      "description": "Cafe stop often featured in Central / SoHo style travel vlogs (seed).",
+      "tags": ["cafe", "dessert", "central", "hong-kong"],
+      "source": {
+        "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
+        "youtube_title": "Seed demo — Central cafes",
+        "kol_id": "demo_kol",
+        "timestamp_sec": 340,
+        "quote": "Grab coffee here before shopping."
+      },
+      "location": {
+        "lat": 22.2810,
+        "lng": 114.1553,
+        "address": "Central, Hong Kong",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "website": ""
+      },
+      "enrichment": {
+        "rating": 4.3,
+        "photos": []
+      },
+      "confidence": 0.85,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "hk_ifc_mall",
+      "type": "mall",
+      "name": "IFC Mall",
+      "aliases": ["International Finance Centre Mall"],
+      "description": "Shopping mall next to the harbour — frequent on-screen mall name in HK vlogs.",
+      "tags": ["shopping", "mall", "central", "hong-kong"],
+      "source": {
+        "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
+        "youtube_title": "Seed demo — Central shopping",
+        "kol_id": "demo_kol",
+        "timestamp_sec": 510,
+        "quote": "IFC for shopping and the ferry pier."
+      },
+      "location": {
+        "lat": 22.2855,
+        "lng": 114.1580,
+        "address": "8 Finance St, Central",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "website": "https://www.ifc.com.hk/"
+      },
+      "enrichment": {
+        "rating": 4.4,
+        "photos": []
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "hk_temple_street",
+      "type": "street",
+      "name": "Temple Street Night Market",
+      "aliases": ["廟街"],
+      "description": "Night market street for snacks and browsing.",
+      "tags": ["night-market", "street-food", "yau-ma-tei", "hong-kong"],
+      "source": {
+        "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
+        "youtube_title": "Seed demo — night market",
+        "kol_id": "demo_kol",
+        "timestamp_sec": 780,
+        "quote": "Temple Street for night snacks."
+      },
+      "location": {
+        "lat": 22.3062,
+        "lng": 114.1701,
+        "address": "Temple Street, Yau Ma Tei",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Yau Ma Tei"
+      },
+      "contact": {},
+      "enrichment": {
+        "rating": 4.2,
+        "photos": []
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "hk_dim_sum_seed",
+      "type": "restaurant",
+      "name": "Lin Heung Tea House",
+      "aliases": ["蓮香樓"],
+      "description": "Classic dim sum tea house — sample restaurant entity with phone/address fields.",
+      "tags": ["dim-sum", "cantonese", "sheung-wan", "hong-kong"],
+      "source": {
+        "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
+        "youtube_title": "Seed demo — dim sum",
+        "kol_id": "demo_kol",
+        "timestamp_sec": 900,
+        "quote": "Old-school dim sum push-cart style."
+      },
+      "location": {
+        "lat": 22.2859,
+        "lng": 114.1517,
+        "address": "160-164 Wellington St, Sheung Wan",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Sheung Wan"
+      },
+      "contact": {
+        "phone": ""
+      },
+      "enrichment": {
+        "rating": 4.1,
+        "photos": []
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "tyo_shibuya_crossing",
+      "type": "attraction",
+      "name": "Shibuya Crossing",
+      "aliases": ["渋谷スクランブル交差点"],
+      "description": "Seed place outside HK so you can test city filters and non-nearby empty state.",
+      "tags": ["tokyo", "crossing", "landmark"],
+      "source": {
+        "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
+        "youtube_title": "Seed demo — Tokyo",
+        "kol_id": "demo_kol",
+        "timestamp_sec": 60,
+        "quote": "Start at the scramble crossing."
+      },
+      "location": {
+        "lat": 35.6595,
+        "lng": 139.7005,
+        "address": "Shibuya Crossing, Tokyo",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Shibuya"
+      },
+      "contact": {},
+      "enrichment": {
+        "rating": 4.7,
+        "photos": []
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "pref_hk_cafe_similar",
+      "type": "cafe",
+      "name": "Cupping Room (Central)",
+      "aliases": [],
+      "description": "Example preference-style place (not from a KOL clip). Used to demo 'from your likes' suggestions.",
+      "tags": ["cafe", "coffee", "central", "hong-kong"],
+      "source": {
+        "youtube_url": "",
+        "youtube_title": "",
+        "kol_id": "demo_kol",
+        "timestamp_sec": null,
+        "quote": ""
+      },
+      "location": {
+        "lat": 22.2819,
+        "lng": 114.1558,
+        "address": "Central, Hong Kong",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {},
+      "enrichment": {
+        "rating": 4.5,
+        "photos": []
+      },
+      "confidence": 0.7,
+      "needs_review": false,
+      "origin": "like_preference"
+    }
+  ]
+}
