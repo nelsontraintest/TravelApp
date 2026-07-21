@@ -26,15 +26,21 @@ export function similarityScore(candidate, allPlaces, likedIds) {
  * Nearby results: KOL places + preference-origin places that match likes.
  * Preference suggestions are marked with reason "like_preference".
  */
-export function rankNearby(places, { lat, lng, radiusKm, haversineKm }) {
+export function rankNearby(places, { lat, lng, radiusKm, cityFilter, haversineKm }) {
   const likedIds = getLikes();
   const withDist = [];
+  const cityKey = cityFilter ? cityFilter.toLowerCase() : "";
 
   for (const place of places) {
     const loc = place.location || {};
     if (loc.lat == null || loc.lng == null) continue;
     const distanceKm = haversineKm(lat, lng, loc.lat, loc.lng);
-    if (distanceKm > radiusKm) continue;
+    if (cityKey) {
+      const placeCity = (loc.city || "").toLowerCase();
+      if (placeCity !== cityKey) continue;
+    } else if (distanceKm > radiusKm) {
+      continue;
+    }
 
     const origin = place.origin || "kol";
     const sim = similarityScore(place, places, likedIds);

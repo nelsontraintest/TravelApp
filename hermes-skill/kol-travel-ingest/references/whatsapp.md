@@ -81,7 +81,7 @@ Something like:
 
 1. Wait ~1–2 minutes for Pages  
 2. Open/reload https://nelsontraintest.github.io/TravelApp/web/  
-3. Use location or a Demo pin  
+3. Use location or a Preview area  
 
 ## Troubleshooting
 

@@ -7,12 +7,12 @@
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#0d3a34" />
+    <meta name="theme-color" content="#007A33" />
     <title>travel_app — Nearby</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;600;700&family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -24,7 +24,7 @@
         <p class="brand-sub">KOL travel spots near you</p>
       </header>
 
-      <section class="panel">
+      <section class="panel viewfinder-panel">
         <h1 class="hero-line">What’s around me?</h1>
         <p class="muted">
           Places your travel KOL mentioned — plus a few suggestions from spots
@@ -40,6 +40,7 @@
             <label class="field">
               Radius
               <select id="radius">
+                <option value="all" id="radius-all" hidden>All in area</option>
                 <option value="0.5">500 m</option>
                 <option value="1" selected>1 km</option>
                 <option value="2">2 km</option>
@@ -48,7 +49,7 @@
               </select>
             </label>
             <label class="field">
-              Demo pin
+              Preview area
               <select id="demo">
                 <option value="">—</option>
               </select>
@@ -56,7 +57,7 @@
           </div>
         </div>
 
-        <p class="status" id="status"></p>
+        <p class="status lcd" id="status"></p>
       </section>
 
       <div class="list" id="list" aria-live="polite"></div>

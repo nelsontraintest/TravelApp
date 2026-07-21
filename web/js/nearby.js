@@ -11,15 +11,36 @@ const listEl = document.getElementById("list");
 const radiusEl = document.getElementById("radius");
 const demoEl = document.getElementById("demo");
 const locateBtn = document.getElementById("locate");
+const radiusAllEl = document.getElementById("radius-all");
 
 let placesDb = { places: [], demo_pins: [] };
-/** @type {Record<string, {lat:number,lng:number,label:string,preview_url?:string}>} */
+/** @type {Record<string, {lat:number,lng:number,label:string,city?:string,preview_url?:string}>} */
 let demoLocations = {};
 let userLoc = null;
+let activePreviewId = null;
 
 function setStatus(msg, isError = false) {
   statusEl.textContent = msg;
   statusEl.classList.toggle("error", isError);
+}
+
+function isPreviewMode() {
+  return userLoc?.source === "demo" && activePreviewId != null;
+}
+
+function syncRadiusOptions({ defaultAll = false } = {}) {
+  if (!radiusAllEl) return;
+  if (isPreviewMode()) {
+    radiusAllEl.hidden = false;
+    if (defaultAll || radiusEl.value === "all") {
+      radiusEl.value = "all";
+    }
+  } else {
+    radiusAllEl.hidden = true;
+    if (radiusEl.value === "all") {
+      radiusEl.value = "1";
+    }
+  }
 }
 
 function buildDemoPinOptions() {
@@ -32,6 +53,7 @@ function buildDemoPinOptions() {
       lat: pin.lat,
       lng: pin.lng,
       label: pin.label || pin.id,
+      city: pin.city,
       preview_url: pin.preview_url,
     };
     const opt = document.createElement("option");
@@ -48,25 +70,34 @@ async function loadPlaces() {
   buildDemoPinOptions();
 }
 
+function getRankOptions() {
+  const useAllInArea = isPreviewMode() && radiusEl.value === "all";
+  const preview = activePreviewId ? demoLocations[activePreviewId] : null;
+  return {
+    lat: userLoc.lat,
+    lng: userLoc.lng,
+    radiusKm: useAllInArea ? Infinity : parseFloat(radiusEl.value) || 1,
+    cityFilter: useAllInArea && preview?.city ? preview.city : null,
+    haversineKm,
+  };
+}
+
 function render() {
   listEl.innerHTML = "";
   if (!userLoc) {
     listEl.innerHTML =
-      '<div class="empty"><strong>Waiting for location</strong>Tap the button to use your iPhone location, or pick a demo pin.</div>';
+      '<div class="empty"><strong>Waiting for location</strong>Tap the button to use your iPhone location, or pick a preview area.</div>';
     return;
   }
 
-  const radiusKm = parseFloat(radiusEl.value) || 1;
-  const ranked = rankNearby(placesDb.places || [], {
-    lat: userLoc.lat,
-    lng: userLoc.lng,
-    radiusKm,
-    haversineKm,
-  });
+  const useAllInArea = isPreviewMode() && radiusEl.value === "all";
+  const ranked = rankNearby(placesDb.places || [], getRankOptions());
 
   if (!ranked.length) {
-    listEl.innerHTML =
-      '<div class="empty panel"><strong>No travel spots nearby</strong>Nothing from your KOL database (or like suggestions) within this radius. Try a larger radius (5–15 km for demo pins) or another area.</div>';
+    const hint = useAllInArea
+      ? "No ingested places for this area yet."
+      : "Try a larger radius, pick a preview area, or choose All in area.";
+    listEl.innerHTML = `<div class="empty panel"><strong>No travel spots nearby</strong>Nothing from your KOL database (or like suggestions) in range. ${hint}</div>`;
     return;
   }
 
@@ -114,10 +145,23 @@ function escapeHtml(s) {
     .replaceAll('"', "&quot;");
 }
 
+function previewStatusMessage(demo) {
+  const useAllInArea = radiusEl.value === "all";
+  if (useAllInArea) {
+    return `Previewing ${demo.label} (not your location) — all places in area`;
+  }
+  const radiusKm = parseFloat(radiusEl.value) || 1;
+  const hint =
+    radiusKm < 5 ? " — try All in area to see every ingested spot" : "";
+  return `Previewing ${demo.label} (not your location)${hint}`;
+}
+
 async function locateFromDevice() {
   setStatus("Getting your location…");
   try {
     userLoc = await getCurrentPosition();
+    activePreviewId = null;
+    syncRadiusOptions();
     setStatus(
       `Located (±${Math.round(userLoc.accuracy || 0)} m). Showing spots within radius.`
     );
@@ -130,21 +174,31 @@ async function locateFromDevice() {
 
 function applyDemo() {
   const key = demoEl.value;
-  if (!key) return;
+  if (!key) {
+    activePreviewId = null;
+    syncRadiusOptions();
+    userLoc = null;
+    render();
+    setStatus("Ready. Use your location on iPhone Safari (allow when prompted).");
+    return;
+  }
   const demo = demoLocations[key];
   if (!demo) return;
+  activePreviewId = key;
   userLoc = { lat: demo.lat, lng: demo.lng, source: "demo" };
-  const radiusKm = parseFloat(radiusEl.value) || 1;
-  const hint =
-    radiusKm < 5
-      ? " — try 5–15 km radius to see more spots in this area"
-      : "";
-  setStatus(`${demo.label} — demo pin (not GPS)${hint}`);
+  syncRadiusOptions({ defaultAll: true });
+  setStatus(previewStatusMessage(demo));
   render();
 }
 
 locateBtn.addEventListener("click", locateFromDevice);
-radiusEl.addEventListener("change", render);
+radiusEl.addEventListener("change", () => {
+  if (isPreviewMode()) {
+    const demo = demoLocations[activePreviewId];
+    if (demo) setStatus(previewStatusMessage(demo));
+  }
+  render();
+});
 demoEl.addEventListener("change", applyDemo);
 
 (async function init() {
@@ -153,9 +207,12 @@ demoEl.addEventListener("change", applyDemo);
     const fromQuery = locationFromQuery();
     if (fromQuery) {
       userLoc = fromQuery;
+      activePreviewId = null;
+      syncRadiusOptions();
       setStatus("Location from link query (?lat=&lng=). Try 5–15 km radius if needed.");
       render();
     } else {
+      syncRadiusOptions();
       render();
       setStatus("Ready. Use your location on iPhone Safari (allow when prompted).");
     }

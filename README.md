@@ -17,7 +17,7 @@ Repo: [nelsontraintest/TravelApp](https://github.com/nelsontraintest/TravelApp)
 2. Go to: **https://nelsontraintest.github.io/TravelApp/web/**
 3. Tap **Use my location** → **Allow**.
 4. Pick a **Radius** (start with 1–5 km).
-5. If nothing is in range → you’ll see **No travel spots nearby** (expected until you ingest places near you, or use a larger radius / Demo pin).
+5. If nothing is in range → you’ll see **No travel spots nearby** (expected until you ingest places near you, or use a larger radius / Preview area).
 
 **Why HTTPS?** iPhone Safari blocks GPS on plain `http://` LAN IPs. GitHub Pages gives HTTPS, so location works.
 
@@ -38,7 +38,7 @@ cd /path/to/TravelApp   # or your local clone
 Then open `http://127.0.0.1:8765/web/` on the Mac.
 
 - GPS works on Mac localhost.
-- On iPhone over hotspot/LAN HTTP, GPS is usually **blocked** — use **Demo pin**, or open the **GitHub Pages HTTPS** link instead.
+- On iPhone over hotspot/LAN HTTP, GPS is usually **blocked** — use **Preview area**, or open the **GitHub Pages HTTPS** link instead.
 
 ---
 
@@ -46,18 +46,18 @@ Then open `http://127.0.0.1:8765/web/` on the Mac.
 
 | Tab | What it does |
 |-----|----------------|
-| **Nearby** | Uses your location (or Demo pin / `?lat=&lng=`) and lists places within the radius |
+| **Nearby** | Uses your location (or Preview area / `?lat=&lng=`) and lists places within the radius |
 | **Swipe** | Like / Nope on KOL places; likes stay on that phone (`localStorage`) |
 
 - Cards from videos are labeled **From KOL video**.
 - Suggestions from your taste are labeled **From your likes (not KOL)**.
 
-### Demo pins
+### Preview areas
 
-Demo pins let you browse ingested places **without being there**. They live in `data/places.json` (`demo_pins` array) and are **auto-added or updated on each YouTube ingest** — one pin per city with geocoded places (centroid of that batch).
+Preview areas let you browse ingested places **without being there**. They live in `data/places.json` (`demo_pins` array) and are **auto-added or updated on each YouTube ingest** — one pin per city with geocoded places (centroid of that batch).
 
-1. Open **Nearby** → pick **Demo pin** (e.g. **Furano, Hokkaido** or **Biei**).
-2. Set **Radius** to **5–15 km** to see regional spots from a KOL video.
+1. Open **Nearby** → pick **Preview area** (e.g. **Furano, Hokkaido** or **Biei**).
+2. **Radius** defaults to **All in area** — shows every ingested place in that city. You can also pick 5–15 km for distance-based browsing.
 3. Or open a preview link directly:
 
    https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.3447&lng=142.3789
@@ -183,7 +183,7 @@ Or paste only the YouTube URL — Hermes may ask one short follow-up (KOL name o
 
 4. On iPhone: wait **~1–2 minutes** for GitHub Pages, then reload  
    **https://nelsontraintest.github.io/TravelApp/web/**  
-   and check **Nearby** (location or Demo pin).
+   and check **Nearby** (location or Preview area).
 
 #### What a successful Hermes reply looks like
 
@@ -213,7 +213,7 @@ Or paste only the YouTube URL — Hermes may ask one short follow-up.
 
 1. Wait **~1–2 minutes** for GitHub Pages.
 2. Reload https://nelsontraintest.github.io/TravelApp/web/ on iPhone.
-3. Check Nearby (location or Demo pin).
+3. Check Nearby (location or Preview area).
 
 Hermes should run `./scripts/publish_places.sh` for you (commits **only** `data/places.json`).
 
@@ -278,7 +278,7 @@ https://nelsontraintest.github.io/TravelApp/web/
 | Problem | Fix |
 |---------|-----|
 | iPhone: “origin does not have permission to use Geolocation” on LAN HTTP | Use the **GitHub Pages https://** link above |
-| No spots nearby | Larger radius, Demo pin, or ingest places near your city |
+| No spots nearby | Larger radius, Preview area (All in area), or ingest places near your city |
 | Pages 404 / stale after push | Wait 1–2 minutes; hard-refresh Safari |
 | WhatsApp: no Hermes reply | `hermes gateway status` → `hermes gateway start`; re-pair with `hermes whatsapp`; try `hermes gateway restart` |
 | Gateway up but Hermes silent | Confirm Ollama/Gemma4 running (`ollama list`); check `hermes logs` |
@@ -291,7 +291,7 @@ https://nelsontraintest.github.io/TravelApp/web/
 ## Beginner checklist
 
 - [ ] Open https://nelsontraintest.github.io/TravelApp/web/ on iPhone
-- [ ] Allow location (or use Demo pin — e.g. Furano with 5–15 km radius)
+- [ ] Allow location (or use Preview area — e.g. Furano with All in area)
 - [ ] Try **Swipe**, then return to **Nearby**
 - [ ] Symlink Hermes skill; pair WhatsApp; start gateway
 - [ ] Send one YouTube URL on WhatsApp; wait for reply + Pages; reload the phone

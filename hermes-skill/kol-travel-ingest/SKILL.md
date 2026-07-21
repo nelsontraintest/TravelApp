@@ -151,7 +151,7 @@ python3 "$SKILL_DIR/scripts/merge_places.py" /tmp/travel_app/extract_<videoid>.j
 python3 "$SKILL_DIR/scripts/validate_places.py"
 ```
 
-`merge_places.py` also **upserts `demo_pins`** — one pin per city in the incoming batch (centroid of geocoded places). The script prints `demo_pins_updated` with pin labels; mention any new or updated pins in your reply (e.g. “Demo pin: Furano, Hokkaido”).
+`merge_places.py` also **upserts `demo_pins`** — one pin per city in the incoming batch (centroid of geocoded places). The script prints `demo_pins_updated` with pin labels; mention any new or updated preview areas in your reply (e.g. “Preview area: Furano, Hokkaido”).
 
 Completion criteria: validate prints `"ok": true`. Keep added/updated counts for the reply.
 
@@ -171,7 +171,7 @@ Completion criteria: script prints the live URL. Do **not** invent other git com
 Send a short summary:
 
 - Added / updated counts and place names (brief list)
-- **Demo pins** added or refreshed (city labels) — user can pick them in Nearby with 5–15 km radius
+- **Preview areas** added or refreshed (city labels) — user can pick them in Nearby; default radius is **All in area**
 - Which still `needs_review`
 - Live app: `https://nelsontraintest.github.io/TravelApp/web/`
 - Tell them to **wait ~1–2 minutes**, then reload Safari on iPhone
