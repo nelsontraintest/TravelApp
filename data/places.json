@@ -15,6 +15,55 @@
       "notes": "Hokkaido winter rail trip vlogs (麦巴鲁旅行 / Maibaru Travel)."
     }
   ],
+  "demo_pins": [
+    {
+      "id": "hk-central",
+      "label": "HK Central",
+      "lat": 22.2815,
+      "lng": 114.1555,
+      "city": "Hong Kong",
+      "country": "HK",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=22.2815&lng=114.1555"
+    },
+    {
+      "id": "hk-tst",
+      "label": "HK Tsim Sha Tsui",
+      "lat": 22.294,
+      "lng": 114.172,
+      "city": "Hong Kong",
+      "country": "HK",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=22.2940&lng=114.1720"
+    },
+    {
+      "id": "tokyo",
+      "label": "Tokyo Shibuya",
+      "lat": 35.6595,
+      "lng": 139.7005,
+      "city": "Tokyo",
+      "country": "JP",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=35.6595&lng=139.7005"
+    },
+    {
+      "id": "furano",
+      "label": "Furano, Hokkaido",
+      "lat": 43.3447,
+      "lng": 142.3789,
+      "city": "Furano",
+      "country": "JP",
+      "source_youtube_url": "https://youtu.be/6fL9aDhAlzs",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.3447&lng=142.3789"
+    },
+    {
+      "id": "biei",
+      "label": "Biei, Hokkaido",
+      "lat": 43.484,
+      "lng": 142.627,
+      "city": "Biei",
+      "country": "JP",
+      "source_youtube_url": "https://youtu.be/6fL9aDhAlzs",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.4840&lng=142.6270"
+    }
+  ],
   "places": [
     {
       "id": "hk_tsim_sha_tsui_harbour",
