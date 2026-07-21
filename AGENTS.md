@@ -1,4 +1,4 @@
-# Scouted / travel_app
+# travel_app
 
 When working in this repo with Hermes:
 

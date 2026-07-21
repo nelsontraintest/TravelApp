@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate places.json shape for Scouted travel DB."""
+"""Validate places.json shape for travel_app travel DB."""
 
 from __future__ import annotations
 

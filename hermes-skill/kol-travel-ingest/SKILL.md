@@ -1,22 +1,22 @@
 ---
 name: kol-travel-ingest
-description: "Extract restaurants, shops, streets, malls, people, and products from travel KOL YouTube videos into Scouted places.json. Use when the user pastes a YouTube URL, asks to ingest a travel vlog, build a travel database, or enrich place names with maps/geocoding."
+description: "Extract restaurants, shops, streets, malls, people, and products from travel KOL YouTube videos into travel_app places.json. Use when the user pastes a YouTube URL, asks to ingest a travel vlog, build a travel database, or enrich place names with maps/geocoding."
 version: 1.0.0
-author: Scouted / travel_app
+author: travel_app
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [youtube, travel, kol, places, ingest, gemma, scouted]
+    tags: [youtube, travel, kol, places, ingest, gemma, travel_app]
     related_skills: [youtube-content, maps]
     requires_toolsets: [terminal]
 ---
 
-# KOL Travel Ingest (Scouted)
+# KOL Travel Ingest (travel_app)
 
 ## Overview
 
-Turn a travel KOL YouTube video into structured places for the **Scouted** web app
+Turn a travel KOL YouTube video into structured places for the **travel_app** web app
 (`travel_app/data/places.json`). Optimized for **local Gemma4** via Hermes:
 short steps, strict JSON, and helper scripts — avoid huge single prompts.
 
@@ -30,7 +30,7 @@ Don't use for: general YouTube summaries (use `youtube-content`), or live "near 
 
 ## Project paths
 
-Assume the Scouted repo is:
+Assume the travel_app repo is:
 
 ```text
 TRAVEL_APP=/Users/nlee/DevelopmentProjects/projects/travel_app
@@ -115,8 +115,8 @@ Gemma tips (local model):
 Write the array to a temp file:
 
 ```bash
-mkdir -p /tmp/scouted
-# save extraction as /tmp/scouted/extract_<videoid>.json
+mkdir -p /tmp/travel_app
+# save extraction as /tmp/travel_app/extract_<videoid>.json
 ```
 
 ### 3. Enrich with maps (geocode)
@@ -136,7 +136,7 @@ Optional later: Google Places API for phone/reviews/photos — not required for 
 ### 4. Merge into the database
 
 ```bash
-python3 "$SKILL_DIR/scripts/merge_places.py" /tmp/scouted/extract_<videoid>.json
+python3 "$SKILL_DIR/scripts/merge_places.py" /tmp/travel_app/extract_<videoid>.json
 python3 "$SKILL_DIR/scripts/validate_places.py"
 ```
 
@@ -154,7 +154,7 @@ Open the URL on iPhone (same Wi‑Fi) → **Nearby** or **Swipe**.
 
 ```text
 Use skill kol-travel-ingest.
-Ingest this YouTube video into my Scouted travel DB:
+Ingest this YouTube video into my travel_app travel DB:
 <PASTE_URL>
 KOL name: <NAME>
 City/region hint: <e.g. Hong Kong / Tokyo>
@@ -171,7 +171,7 @@ City/region hint: <e.g. Hong Kong / Tokyo>
 ## Verification checklist
 
 - [ ] Transcript fetched successfully
-- [ ] Extraction JSON saved under `/tmp/scouted/`
+- [ ] Extraction JSON saved under `/tmp/travel_app/`
 - [ ] Maps enrichment attempted for place-like types
 - [ ] `merge_places.py` reported added/updated
 - [ ] `validate_places.py` ok

@@ -1,4 +1,4 @@
-# Scouted (TravelApp)
+# travel_app
 
 Personal travel web app: pull places from travel KOL YouTube videos with **Hermes + local Gemma4**, store them in `data/places.json`, then open the site on your **iPhone** to see what’s nearby and swipe likes.
 
@@ -102,7 +102,7 @@ Paste into Hermes:
 
 ```text
 Use skill kol-travel-ingest.
-Ingest this YouTube video into my Scouted travel DB:
+Ingest this YouTube video into my travel_app travel DB:
 <PASTE_YOUTUBE_URL>
 KOL name: <NAME>
 City/region hint: Hong Kong
@@ -131,7 +131,7 @@ Wait 1–2 minutes for GitHub Pages to update, then reload Safari on the iPhone.
 ### Manual merge / validate
 
 ```bash
-python3 hermes-skill/kol-travel-ingest/scripts/merge_places.py /tmp/scouted/extract_xxx.json
+python3 hermes-skill/kol-travel-ingest/scripts/merge_places.py /tmp/travel_app/extract_xxx.json
 python3 hermes-skill/kol-travel-ingest/scripts/validate_places.py
 ```
 

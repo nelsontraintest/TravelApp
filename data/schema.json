@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ScoutedPlacesDatabase",
+  "title": "travel_appPlacesDatabase",
   "description": "Travel places extracted from KOL YouTube videos",
   "type": "object",
   "required": ["version", "updated_at", "places"],

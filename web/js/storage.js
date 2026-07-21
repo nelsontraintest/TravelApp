@@ -1,5 +1,5 @@
-const LIKES_KEY = "scouted_likes_v1";
-const DISLIKES_KEY = "scouted_dislikes_v1";
+const LIKES_KEY = "travel_app_likes_v1";
+const DISLIKES_KEY = "travel_app_dislikes_v1";
 
 function readSet(key) {
   try {
