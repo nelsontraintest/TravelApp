@@ -1,12 +1,18 @@
 {
   "version": 1,
-  "updated_at": "2026-07-21T00:00:00Z",
+  "updated_at": "2026-07-21T07:20:20Z",
   "kols": [
     {
       "id": "demo_kol",
       "name": "Demo Travel KOL",
       "youtube_channel": "",
       "notes": "Seed data for testing nearby + swipe. Replace by ingesting real videos with Hermes."
+    },
+    {
+      "id": "maibaru_travel",
+      "name": "Maibaru Travel",
+      "youtube_channel": "",
+      "notes": "Hokkaido winter rail trip vlogs (麦巴鲁旅行 / Maibaru Travel)."
     }
   ],
   "places": [
@@ -14,9 +20,17 @@
       "id": "hk_tsim_sha_tsui_harbour",
       "type": "attraction",
       "name": "Tsim Sha Tsui Waterfront",
-      "aliases": ["TST Promenade", "星光大道附近"],
+      "aliases": [
+        "TST Promenade",
+        "星光大道附近"
+      ],
       "description": "Harbour promenade with skyline views — classic vlog walk stop.",
-      "tags": ["harbour", "walk", "sunset", "hong-kong"],
+      "tags": [
+        "harbour",
+        "walk",
+        "sunset",
+        "hong-kong"
+      ],
       "source": {
         "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
         "youtube_title": "Seed demo — Hong Kong waterfront",
@@ -47,7 +61,12 @@
       "name": "Manor Maison",
       "aliases": [],
       "description": "Cafe stop often featured in Central / SoHo style travel vlogs (seed).",
-      "tags": ["cafe", "dessert", "central", "hong-kong"],
+      "tags": [
+        "cafe",
+        "dessert",
+        "central",
+        "hong-kong"
+      ],
       "source": {
         "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
         "youtube_title": "Seed demo — Central cafes",
@@ -56,7 +75,7 @@
         "quote": "Grab coffee here before shopping."
       },
       "location": {
-        "lat": 22.2810,
+        "lat": 22.281,
         "lng": 114.1553,
         "address": "Central, Hong Kong",
         "city": "Hong Kong",
@@ -78,9 +97,16 @@
       "id": "hk_ifc_mall",
       "type": "mall",
       "name": "IFC Mall",
-      "aliases": ["International Finance Centre Mall"],
+      "aliases": [
+        "International Finance Centre Mall"
+      ],
       "description": "Shopping mall next to the harbour — frequent on-screen mall name in HK vlogs.",
-      "tags": ["shopping", "mall", "central", "hong-kong"],
+      "tags": [
+        "shopping",
+        "mall",
+        "central",
+        "hong-kong"
+      ],
       "source": {
         "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
         "youtube_title": "Seed demo — Central shopping",
@@ -90,7 +116,7 @@
       },
       "location": {
         "lat": 22.2855,
-        "lng": 114.1580,
+        "lng": 114.158,
         "address": "8 Finance St, Central",
         "city": "Hong Kong",
         "country": "HK",
@@ -111,9 +137,16 @@
       "id": "hk_temple_street",
       "type": "street",
       "name": "Temple Street Night Market",
-      "aliases": ["廟街"],
+      "aliases": [
+        "廟街"
+      ],
       "description": "Night market street for snacks and browsing.",
-      "tags": ["night-market", "street-food", "yau-ma-tei", "hong-kong"],
+      "tags": [
+        "night-market",
+        "street-food",
+        "yau-ma-tei",
+        "hong-kong"
+      ],
       "source": {
         "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
         "youtube_title": "Seed demo — night market",
@@ -142,9 +175,16 @@
       "id": "hk_dim_sum_seed",
       "type": "restaurant",
       "name": "Lin Heung Tea House",
-      "aliases": ["蓮香樓"],
+      "aliases": [
+        "蓮香樓"
+      ],
       "description": "Classic dim sum tea house — sample restaurant entity with phone/address fields.",
-      "tags": ["dim-sum", "cantonese", "sheung-wan", "hong-kong"],
+      "tags": [
+        "dim-sum",
+        "cantonese",
+        "sheung-wan",
+        "hong-kong"
+      ],
       "source": {
         "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
         "youtube_title": "Seed demo — dim sum",
@@ -175,9 +215,15 @@
       "id": "tyo_shibuya_crossing",
       "type": "attraction",
       "name": "Shibuya Crossing",
-      "aliases": ["渋谷スクランブル交差点"],
+      "aliases": [
+        "渋谷スクランブル交差点"
+      ],
       "description": "Seed place outside HK so you can test city filters and non-nearby empty state.",
-      "tags": ["tokyo", "crossing", "landmark"],
+      "tags": [
+        "tokyo",
+        "crossing",
+        "landmark"
+      ],
       "source": {
         "youtube_url": "https://www.youtube.com/watch?v=SEED_DEMO",
         "youtube_title": "Seed demo — Tokyo",
@@ -208,7 +254,12 @@
       "name": "Cupping Room (Central)",
       "aliases": [],
       "description": "Example preference-style place (not from a KOL clip). Used to demo 'from your likes' suggestions.",
-      "tags": ["cafe", "coffee", "central", "hong-kong"],
+      "tags": [
+        "cafe",
+        "coffee",
+        "central",
+        "hong-kong"
+      ],
       "source": {
         "youtube_url": "",
         "youtube_title": "",
@@ -232,6 +283,314 @@
       "confidence": 0.7,
       "needs_review": false,
       "origin": "like_preference"
+    },
+    {
+      "type": "shop",
+      "name": "Tsuruha Drug Furano",
+      "aliases": [
+        "ツルハドラッグ",
+        "TSURUHA Drug"
+      ],
+      "description": "Brightly lit drugstore near Furano, mentioned at the start of the winter rail trip.",
+      "tags": [
+        "furano",
+        "shop",
+        "hokkaido",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
+        "kol_id": "maibaru_travel",
+        "timestamp_sec": 76,
+        "quote": "那间 TSURUHA Drug 亮得像在发光"
+      },
+      "location": {
+        "lat": 43.3446569,
+        "lng": 142.3789256,
+        "address": "国道38号, 新富町, 富良野市, 北海道",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "osm_url": "https://www.openstreetmap.org/way/530759187"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "furano_tsuruha_drug_furano"
+    },
+    {
+      "type": "restaurant",
+      "name": "くまげら (Kumagera)",
+      "aliases": [
+        "Kumagera"
+      ],
+      "description": "Local Furano restaurant known for venison, duck, chicken, and mountain hot pot (山賊鍋).",
+      "tags": [
+        "furano",
+        "restaurant",
+        "hot-pot",
+        "hokkaido",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
+        "kol_id": "maibaru_travel",
+        "timestamp_sec": 120,
+        "quote": "在地料理店「くまげら」 红肉是鹿肉 还有鸭肉和鸡肉 「山贼火锅」最适合寒冷的冬天"
+      },
+      "location": {
+        "lat": 43.3452376,
+        "lng": 142.3912095,
+        "address": "栄町, 富良野市, 北海道 076-0025",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "osm_url": "https://www.openstreetmap.org/node/4931127322"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "furano_kumagera"
+    },
+    {
+      "type": "hotel",
+      "name": "Kyoto Maru Pension (Lavender)",
+      "aliases": [
+        "ラベンダー",
+        "雪のペンション",
+        "Lavender"
+      ],
+      "description": "Snowy guesthouse with Lavender lounge; cozy winter stay near Furano.",
+      "tags": [
+        "furano",
+        "pension",
+        "accommodation",
+        "hokkaido",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
+        "kol_id": "maibaru_travel",
+        "timestamp_sec": 205,
+        "quote": "充满冬日静谧的民宿「Lavender」"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": []
+      },
+      "confidence": 0.75,
+      "needs_review": true,
+      "origin": "kol",
+      "id": "furano_kyoto_maru_pension_lavender"
+    },
+    {
+      "type": "shop",
+      "name": "Furano Delice",
+      "aliases": [
+        "富良野デリス",
+        "菓子工房のデリス"
+      ],
+      "description": "Patisserie for Hokkaido sweets including famous cream puffs.",
+      "tags": [
+        "furano",
+        "cafe",
+        "dessert",
+        "hokkaido",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
+        "kol_id": "maibaru_travel",
+        "timestamp_sec": 329,
+        "quote": "甜点工房 Furano Delice 可以享受北海道甜点"
+      },
+      "location": {
+        "lat": 43.3382588,
+        "lng": 142.3607936,
+        "address": "下御料, 富良野市, 北海道 076-0034",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "osm_url": "https://www.openstreetmap.org/node/4198862290"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "furano_furano_delice"
+    },
+    {
+      "type": "attraction",
+      "name": "Ningle Terrace",
+      "aliases": [
+        "ニングルテラス",
+        "手作小店聚落"
+      ],
+      "description": "Log-cabin craft shop village in the Furano forest, fairy-tale winter atmosphere.",
+      "tags": [
+        "furano",
+        "shopping",
+        "craft",
+        "hokkaido",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
+        "kol_id": "maibaru_travel",
+        "timestamp_sec": 512,
+        "quote": "我到了手作小店聚落「Ningle Terrace」 好可爱♥"
+      },
+      "location": {
+        "lat": 43.3234308,
+        "lng": 142.3563389,
+        "address": "中御料, 富良野市, 北海道 076-0013",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "osm_url": "https://www.openstreetmap.org/node/4607790389"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "furano_ningle_terrace"
+    },
+    {
+      "type": "attraction",
+      "name": "Blue Pond (Aoiike)",
+      "aliases": [
+        "青い池",
+        "青池",
+        "白池"
+      ],
+      "description": "Famous Biei pond; stunning even frozen in winter (KOL calls it 白池 in snow season).",
+      "tags": [
+        "biei",
+        "nature",
+        "pond",
+        "hokkaido",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
+        "kol_id": "maibaru_travel",
+        "timestamp_sec": 1211,
+        "quote": "这个季节是「白池」"
+      },
+      "location": {
+        "lat": 43.4934902,
+        "lng": 142.6140976,
+        "address": "美瑛町, 北海道",
+        "city": "Biei",
+        "country": "JP",
+        "area": "Biei"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "osm_url": "https://www.openstreetmap.org/way/303771940"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "biei_blue_pond_aoiike"
+    },
+    {
+      "type": "attraction",
+      "name": "Shirahige Falls",
+      "aliases": [
+        "白ひげの滝",
+        "白須瀑布",
+        "白金瀑布"
+      ],
+      "description": "Waterfall where underground water drops into the Biei River; winter ice formations.",
+      "tags": [
+        "biei",
+        "nature",
+        "waterfall",
+        "hokkaido",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
+        "kol_id": "maibaru_travel",
+        "timestamp_sec": 1342,
+        "quote": "白須瀑布：地下水落下30公尺流入美瑛川"
+      },
+      "location": {
+        "lat": 43.4745828,
+        "lng": 142.6391874,
+        "address": "美瑛町, 北海道 071-0235",
+        "city": "Biei",
+        "country": "JP",
+        "area": "Biei"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "osm_url": "https://www.openstreetmap.org/node/1459792918"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "biei_shirahige_falls"
     }
   ]
 }
