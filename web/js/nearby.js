@@ -1,5 +1,4 @@
 import {
-  DEMO_LOCATIONS,
   formatDistance,
   getCurrentPosition,
   haversineKm,
@@ -13,7 +12,9 @@ const radiusEl = document.getElementById("radius");
 const demoEl = document.getElementById("demo");
 const locateBtn = document.getElementById("locate");
 
-let placesDb = { places: [] };
+let placesDb = { places: [], demo_pins: [] };
+/** @type {Record<string, {lat:number,lng:number,label:string,preview_url?:string}>} */
+let demoLocations = {};
 let userLoc = null;
 
 function setStatus(msg, isError = false) {
@@ -21,11 +22,30 @@ function setStatus(msg, isError = false) {
   statusEl.classList.toggle("error", isError);
 }
 
+function buildDemoPinOptions() {
+  demoLocations = {};
+  const pins = placesDb.demo_pins || [];
+  demoEl.innerHTML = '<option value="">—</option>';
+  for (const pin of pins) {
+    if (!pin.id || pin.lat == null || pin.lng == null) continue;
+    demoLocations[pin.id] = {
+      lat: pin.lat,
+      lng: pin.lng,
+      label: pin.label || pin.id,
+      preview_url: pin.preview_url,
+    };
+    const opt = document.createElement("option");
+    opt.value = pin.id;
+    opt.textContent = pin.label || pin.id;
+    demoEl.appendChild(opt);
+  }
+}
+
 async function loadPlaces() {
-  // Relative path works on local serve and GitHub Pages (/TravelApp/web/...)
   const res = await fetch("../data/places.json", { cache: "no-store" });
   if (!res.ok) throw new Error("Could not load places.json");
   placesDb = await res.json();
+  buildDemoPinOptions();
 }
 
 function render() {
@@ -46,7 +66,7 @@ function render() {
 
   if (!ranked.length) {
     listEl.innerHTML =
-      '<div class="empty panel"><strong>No travel spots nearby</strong>Nothing from your KOL database (or like suggestions) within this radius. Try a larger radius or another area.</div>';
+      '<div class="empty panel"><strong>No travel spots nearby</strong>Nothing from your KOL database (or like suggestions) within this radius. Try a larger radius (5–15 km for demo pins) or another area.</div>';
     return;
   }
 
@@ -111,10 +131,15 @@ async function locateFromDevice() {
 function applyDemo() {
   const key = demoEl.value;
   if (!key) return;
-  const demo = DEMO_LOCATIONS[key];
+  const demo = demoLocations[key];
   if (!demo) return;
   userLoc = { lat: demo.lat, lng: demo.lng, source: "demo" };
-  setStatus(`${demo.label} — demo pin (not GPS).`);
+  const radiusKm = parseFloat(radiusEl.value) || 1;
+  const hint =
+    radiusKm < 5
+      ? " — try 5–15 km radius to see more spots in this area"
+      : "";
+  setStatus(`${demo.label} — demo pin (not GPS)${hint}`);
   render();
 }
 
@@ -128,7 +153,7 @@ demoEl.addEventListener("change", applyDemo);
     const fromQuery = locationFromQuery();
     if (fromQuery) {
       userLoc = fromQuery;
-      setStatus("Location from link query (?lat=&lng=).");
+      setStatus("Location from link query (?lat=&lng=). Try 5–15 km radius if needed.");
       render();
     } else {
       render();

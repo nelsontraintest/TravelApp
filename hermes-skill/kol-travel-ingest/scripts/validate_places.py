@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 REQUIRED_PLACE = ("id", "type", "name", "source")
+REQUIRED_DEMO_PIN = ("id", "label", "lat", "lng")
 ALLOWED_TYPES = {
     "restaurant",
     "cafe",
@@ -53,6 +54,31 @@ def validate(db: dict) -> list[str]:
             lat, lng = loc.get("lat"), loc.get("lng")
             if (lat is None) ^ (lng is None):
                 errors.append(f"{prefix}: lat/lng must both be set or both null")
+
+    demo_pins = db.get("demo_pins")
+    if demo_pins is not None:
+        if not isinstance(demo_pins, list):
+            errors.append("demo_pins must be an array")
+        else:
+            pin_ids: set[str] = set()
+            for i, pin in enumerate(demo_pins):
+                prefix = f"demo_pins[{i}]"
+                if not isinstance(pin, dict):
+                    errors.append(f"{prefix}: not an object")
+                    continue
+                for key in REQUIRED_DEMO_PIN:
+                    if key not in pin:
+                        errors.append(f"{prefix}: missing {key}")
+                pid = pin.get("id")
+                if pid:
+                    if pid in pin_ids:
+                        errors.append(f"{prefix}: duplicate id {pid}")
+                    pin_ids.add(pid)
+                for coord in ("lat", "lng"):
+                    val = pin.get(coord)
+                    if val is not None and not isinstance(val, (int, float)):
+                        errors.append(f"{prefix}: {coord} must be a number")
+
     return errors
 
 
@@ -74,7 +100,13 @@ def main() -> None:
         for e in errors:
             print(f" - {e}", file=sys.stderr)
         sys.exit(1)
-    print(json.dumps({"ok": True, "places": len(db["places"]), "path": str(path)}, indent=2))
+    demo_count = len(db.get("demo_pins") or [])
+    print(
+        json.dumps(
+            {"ok": True, "places": len(db["places"]), "demo_pins": demo_count, "path": str(path)},
+            indent=2,
+        )
+    )
 
 
 if __name__ == "__main__":

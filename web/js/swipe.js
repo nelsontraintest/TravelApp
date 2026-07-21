@@ -1,4 +1,3 @@
-import { formatDistance, haversineKm, DEMO_LOCATIONS } from "./geo.js";
 import {
   clearPreferences,
   dislikePlace,
@@ -47,14 +46,6 @@ function escapeHtml(s) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
-}
-
-function demoDistance(place) {
-  const demo = DEMO_LOCATIONS["hk-central"];
-  const loc = place.location || {};
-  if (loc.lat == null || loc.lng == null) return "";
-  const km = haversineKm(demo.lat, demo.lng, loc.lat, loc.lng);
-  return `~${formatDistance(km)} from HK Central demo pin`;
 }
 
 function showEmpty() {
@@ -111,7 +102,6 @@ function renderCard() {
           ? `<p class="quote">${escapeHtml(current.source.quote)}</p>`
           : ""
       }
-      <p class="muted">${escapeHtml(demoDistance(current))}</p>
     </article>
   `;
 

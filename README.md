@@ -54,7 +54,17 @@ Then open `http://127.0.0.1:8765/web/` on the Mac.
 
 ### Demo pins
 
-If you’re not near the seed data (Hong Kong / Tokyo samples), choose **Demo pin → HK Central** to see example results.
+Demo pins let you browse ingested places **without being there**. They live in `data/places.json` (`demo_pins` array) and are **auto-added or updated on each YouTube ingest** — one pin per city with geocoded places (centroid of that batch).
+
+1. Open **Nearby** → pick **Demo pin** (e.g. **Furano, Hokkaido** or **Biei**).
+2. Set **Radius** to **5–15 km** to see regional spots from a KOL video.
+3. Or open a preview link directly:
+
+   https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.3447&lng=142.3789
+
+   (Furano — from the Maibaru Travel Hokkaido ingest)
+
+Seed pins include HK Central, HK Tsim Sha Tsui, Tokyo Shibuya, Furano, and Biei. New cities appear automatically after ingest.
 
 ### Optional iPhone Shortcut
 
@@ -281,7 +291,7 @@ https://nelsontraintest.github.io/TravelApp/web/
 ## Beginner checklist
 
 - [ ] Open https://nelsontraintest.github.io/TravelApp/web/ on iPhone
-- [ ] Allow location (or use Demo pin HK Central)
+- [ ] Allow location (or use Demo pin — e.g. Furano with 5–15 km radius)
 - [ ] Try **Swipe**, then return to **Nearby**
 - [ ] Symlink Hermes skill; pair WhatsApp; start gateway
 - [ ] Send one YouTube URL on WhatsApp; wait for reply + Pages; reload the phone

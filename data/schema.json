@@ -23,9 +23,27 @@
     "places": {
       "type": "array",
       "items": { "$ref": "#/definitions/place" }
+    },
+    "demo_pins": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/demo_pin" }
     }
   },
   "definitions": {
+    "demo_pin": {
+      "type": "object",
+      "required": ["id", "label", "lat", "lng"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "lat": { "type": "number" },
+        "lng": { "type": "number" },
+        "city": { "type": "string" },
+        "country": { "type": "string" },
+        "source_youtube_url": { "type": "string" },
+        "preview_url": { "type": "string" }
+      }
+    },
     "place": {
       "type": "object",
       "required": ["id", "type", "name", "source"],

@@ -53,9 +53,3 @@ export function locationFromQuery(search = window.location.search) {
   }
   return null;
 }
-
-export const DEMO_LOCATIONS = {
-  "hk-central": { lat: 22.2815, lng: 114.1555, label: "Demo: HK Central" },
-  "hk-tst": { lat: 22.294, lng: 114.172, label: "Demo: HK Tsim Sha Tsui" },
-  tokyo: { lat: 35.6595, lng: 139.7005, label: "Demo: Tokyo Shibuya" },
-};
