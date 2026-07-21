@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-21T23:33:56Z",
+  "updated_at": "2026-07-21T23:35:08Z",
   "kols": [
     {
       "id": "demo_kol",
@@ -78,6 +78,16 @@
       "country": "HK",
       "source_youtube_url": "https://youtu.be/s1-XJhXZu1g",
       "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=22.4946&lng=114.1383"
+    },
+    {
+      "id": "hong-kong",
+      "label": "Hong Kong",
+      "lat": 22.2917,
+      "lng": 114.1627,
+      "city": "Hong Kong",
+      "country": "HK",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=22.2917&lng=114.1627",
+      "source_youtube_url": "https://youtu.be/dk2CNIwE1j0"
     }
   ],
   "places": [
@@ -1271,9 +1281,9 @@
         "文華冰廳"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2766833,
+        "lng": 114.1752267,
+        "address": "敏華冰廳 Men Wah Bing Teng, 灣仔道 Wan Chai Road, 鵝頸 Bowrington, 摩利臣山 Morrison Hill, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": ""
@@ -1285,8 +1295,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2766833,114.1752267",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/node/9245822202"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1321,9 +1332,9 @@
         "Wan Chai Blue House"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2738976,
+        "lng": 114.1741463,
+        "address": "藍屋 Blue House, 72-74, 石水渠街 Stone Nullah Lane, 灣仔南 Wan Chai South, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1335,8 +1346,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2738976,114.1741463",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/405793051"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1473,9 +1485,9 @@
         "大班燒味"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.4538284,
+        "lng": 114.1705428,
+        "address": "竺扶大班燒味 Chukfo Taipan Restaurant, 安泰路 On Tai Road, 大埔市中心 Tai Po Town Centre, 大埔 Tai Po, 大埔區 Tai Po District, 新界 New Territories, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1487,8 +1499,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4538284,114.1705428",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/node/4858099471"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1524,9 +1537,9 @@
         "Lee Tung Avenue"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2750375,
+        "lng": 114.1720374,
+        "address": "利東街 Lee Tung Street, 灣仔南 Wan Chai South, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1538,8 +1551,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2750375,114.1720374",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/148784061"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1575,9 +1589,9 @@
         "Silk"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2830027,
+        "lng": 114.1544266,
+        "address": "絲茶 Silk, 閣麟街 Cochrane Street, 蘇豪 SoHo, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1589,8 +1603,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2830027,114.1544266",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/node/11293203779"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1677,22 +1692,23 @@
         "City Hall"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2823496,
+        "lng": 114.1615771,
+        "address": "香港大會堂 Hong Kong City Hall, 5, 愛丁堡廣場 Edinburgh Square, 政府山 Government Hill, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
       },
       "contact": {
         "phone": "",
-        "website": ""
+        "website": "https://www.lcsd.gov.hk/en/hkch/index.html"
       },
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2823496,114.1615771",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/101959040"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1727,9 +1743,9 @@
         "Halfway's Halfway Coffee"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2877207,
+        "lng": 114.149533,
+        "address": "Halfway Coffee, 17, 干諾道西 Connaught Road West, 太平山 Tai Ping Shan, 上環 Sheung Wan, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Sheung Wan"
@@ -1741,8 +1757,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2877207,114.149533",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/node/4592731190"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1777,9 +1794,9 @@
         "中環街市"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2839703,
+        "lng": 114.1551489,
+        "address": "中環街市 Central Market, 德輔道中 Des Voeux Road Central, 蘇豪 SoHo, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
@@ -1791,8 +1808,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2839703,114.1551489",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/relation/1528216"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1828,9 +1846,9 @@
         "Mid-Levels Escalator"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2791053,
+        "lng": 114.1507452,
+        "address": "中環至半山自動扶手電梯系統 Central-Mid-Levels Escalator System, 蘇豪 SoHo, 半山 Mid-Levels, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
@@ -1842,8 +1860,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2791053,114.1507452",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/148461471"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1852,7 +1871,7 @@
       "names": {
         "primary": "中環至半山自動扶梯",
         "en": "Central-Mid-Levels Escalator",
-        "ja": "",
+        "ja": "中環至半山自動扶梯",
         "zh-Hant": "中環至半山自動扶梯"
       },
       "description": "World's longest outdoor covered escalator system, starting from Central Market toward Mid-Levels.",
@@ -1879,22 +1898,23 @@
         "Central Police Station"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2811562,
+        "lng": 114.154009,
+        "address": "大館 Tai Kwun, 10, 荷李活道 Hollywood Road, 蘇豪 SoHo, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
       },
       "contact": {
-        "phone": "",
-        "website": ""
+        "phone": "+852 35592600",
+        "website": "https://www.taikwun.hk"
       },
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2811562,114.154009",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/591035975"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1985,9 +2005,9 @@
         "Yat Lok Roast Goose"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.282528,
+        "lng": 114.155321,
+        "address": "一樂燒鵝 Yat Lok Restaurant, 34-38, 士丹利街 Stanley Street, 蘇豪 SoHo, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
@@ -1999,8 +2019,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.282528,114.155321",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/node/4135925290"
       },
       "needs_review": true,
       "origin": "kol",
@@ -2035,9 +2056,9 @@
         "Henderson"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2801593,
+        "lng": 114.1622299,
+        "address": "The Henderson, 2, 金鐘 Admiralty, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
@@ -2049,8 +2070,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2801593,114.1622299",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/1272960456"
       },
       "needs_review": true,
       "origin": "kol",
@@ -2084,9 +2106,9 @@
         "山頂纜車"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2710492,
+        "lng": 114.1508787,
+        "address": "山頂纜車 Peak Tram, 芬梨徑 Findlay Path, 爐峰峽 Victoria Gap, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
@@ -2098,8 +2120,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2710492,114.1508787",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/4338940"
       },
       "needs_review": true,
       "origin": "kol",
@@ -2135,22 +2158,23 @@
         "山頂"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2760386,
+        "lng": 114.1454573,
+        "address": "扯旗山 Victoria Peak, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "The Peak"
       },
       "contact": {
-        "phone": "",
+        "phone": "+ 852 2522 0922",
         "website": ""
       },
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2760386,114.1454573",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/node/26412171"
       },
       "needs_review": true,
       "origin": "kol",
@@ -2238,9 +2262,9 @@
         "Hong Kong Tram"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2886484,
+        "lng": 114.2098216,
+        "address": "香港電車 Hong Kong Tramways, 英皇道 King's Road, 七姊妹 Tsat Tsz Mui, 鰂魚涌 Quarry Bay, 東區 Eastern District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": ""
@@ -2252,8 +2276,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2886484,114.2098216",
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/230987767"
       },
       "needs_review": true,
       "origin": "kol",
