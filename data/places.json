@@ -1384,9 +1384,9 @@
         "香港故事館"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2738976,
+        "lng": 114.1741463,
+        "address": "Near 藍屋 Blue House, 72-74, 石水渠街 Stone Nullah Lane, Wan Chai, Hong Kong",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1398,7 +1398,7 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2738976,114.1741463",
         "source": "osm"
       },
       "needs_review": true,
@@ -1434,9 +1434,9 @@
         "Sipper"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2737918,
+        "lng": 114.1744689,
+        "address": "景星樓 King Sing House, 1A, 堅彌地街 Kennedy Street, 灣仔南 Wan Chai South, Hong Kong",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1448,7 +1448,7 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2737918,114.1744689",
         "source": "osm"
       },
       "needs_review": true,
@@ -1485,9 +1485,9 @@
         "大班燒味"
       ],
       "location": {
-        "lat": 22.4538284,
-        "lng": 114.1705428,
-        "address": "竺扶大班燒味 Chukfo Taipan Restaurant, 安泰路 On Tai Road, 大埔市中心 Tai Po Town Centre, 大埔 Tai Po, 大埔區 Tai Po District, 新界 New Territories, 香港 Hong Kong, 中国",
+        "lat": 22.2763761,
+        "lng": 114.1744605,
+        "address": "三角街 Triangle Street, 灣仔南 Wan Chai South, 灣仔區 Wan Chai District, Hong Kong",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1499,9 +1499,8 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4538284,114.1705428",
-        "source": "osm",
-        "osm_url": "https://www.openstreetmap.org/node/4858099471"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2763761,114.1744605",
+        "source": "osm"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1589,9 +1588,9 @@
         "Silk"
       ],
       "location": {
-        "lat": 22.2830027,
-        "lng": 114.1544266,
-        "address": "絲茶 Silk, 閣麟街 Cochrane Street, 蘇豪 SoHo, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+        "lat": 22.2757752,
+        "lng": 114.1724188,
+        "address": "利東街 Lee Tung Avenue, 灣仔南 Wan Chai South, 灣仔區 Wan Chai District, Hong Kong",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Wan Chai"
@@ -1603,9 +1602,8 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2830027,114.1544266",
-        "source": "osm",
-        "osm_url": "https://www.openstreetmap.org/node/11293203779"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2757752,114.1724188",
+        "source": "osm"
       },
       "needs_review": true,
       "origin": "kol",
@@ -1641,9 +1639,9 @@
         "Hong Kong City Hall Maxim's"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2823496,
+        "lng": 114.1615771,
+        "address": "香港大會堂 Hong Kong City Hall, 5, 愛丁堡廣場 Edinburgh Square, 政府山 Government Hill, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
@@ -1655,7 +1653,7 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2823496,114.1615771",
         "source": "osm"
       },
       "needs_review": true,
@@ -2209,9 +2207,9 @@
         "KINSMAN"
       ],
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.2823021,
+        "lng": 114.1521325,
+        "address": "65-65A, 卑利街 Peel Street, 蘇豪 SoHo, 上環 Sheung Wan, Hong Kong",
         "city": "Hong Kong",
         "country": "HK",
         "area": "Central"
@@ -2223,7 +2221,7 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2823021,114.1521325",
         "source": "osm"
       },
       "needs_review": true,
