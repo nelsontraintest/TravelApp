@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-21T23:28:33Z",
+  "updated_at": "2026-07-21T23:33:56Z",
   "kols": [
     {
       "id": "demo_kol",
@@ -1263,6 +1263,1024 @@
       "confidence": 0.7,
       "needs_review": true,
       "origin": "kol"
+    },
+    {
+      "aliases": [
+        "Man Wah Cafe",
+        "敏華冰廳",
+        "文華冰廳"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "restaurant",
+      "name": "Men Wah Bing Teng",
+      "names": {
+        "primary": "敏華冰廳",
+        "en": "Men Wah Bing Teng",
+        "ja": "",
+        "zh-Hant": "敏華冰廳"
+      },
+      "description": "Tai Hing Group cha chaan teng with vintage style; yuanyang milk tea and classic Hong Kong cafe dishes.",
+      "tags": [
+        "hong-kong",
+        "cha-chaan-teng",
+        "tea-restaurant",
+        "tai-hing"
+      ],
+      "source": {
+        "timestamp_sec": 123,
+        "quote": "This place is called Man Wah Cafe, I just checked. It's part of the Tai Hing Group.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.75,
+      "id": "hong_kong_men_wah_bing_teng"
+    },
+    {
+      "aliases": [
+        "藍屋",
+        "Wan Chai Blue House"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Wan Chai"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Blue House",
+      "names": {
+        "primary": "藍屋",
+        "en": "Blue House",
+        "ja": "",
+        "zh-Hant": "藍屋"
+      },
+      "description": "Famous Wan Chai tong lau landmark with blue exterior walls, originally linked to Hua Tuo Hospital history.",
+      "tags": [
+        "wan-chai",
+        "heritage",
+        "photo-spot",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 239,
+        "quote": "We have now arrived at the Blue House. This is the most famous landmark in Wan Chai.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_blue_house"
+    },
+    {
+      "aliases": [
+        "Hong Kong Story Museum",
+        "Story House",
+        "香港故事館"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Wan Chai"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Hong Kong House of Stories",
+      "names": {
+        "primary": "香港故事館",
+        "en": "Hong Kong House of Stories",
+        "ja": "",
+        "zh-Hant": "香港故事館"
+      },
+      "description": "Small museum near the Blue House selling Hong Kong-themed toys and showcasing local life.",
+      "tags": [
+        "wan-chai",
+        "museum",
+        "blue-house",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 315,
+        "quote": "The Hong Kong Story Museum. Here, you can experience the feeling of local life as a Hong Kong resident.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.85,
+      "id": "hong_kong_hong_kong_house_of_stories"
+    },
+    {
+      "aliases": [
+        "Sipper Cafe",
+        "Sipper"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Wan Chai"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "cafe",
+      "name": "Sipper Coffee",
+      "names": {
+        "primary": "Sipper Coffee",
+        "en": "Sipper Coffee",
+        "ja": "",
+        "zh-Hant": "Sipper Coffee"
+      },
+      "description": "Small low-key specialty cafe near the Blue House known for cold brew and light-roast coffee.",
+      "tags": [
+        "wan-chai",
+        "coffee",
+        "specialty-coffee",
+        "blue-house"
+      ],
+      "source": {
+        "timestamp_sec": 354,
+        "quote": "The café is called Sipper Cafe. I saw someone recommend it online.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_sipper_coffee"
+    },
+    {
+      "aliases": [
+        "竺扶大班燒味",
+        "Zhufu Daban Roast Meat",
+        "大班燒味"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Wan Chai"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "restaurant",
+      "name": "Chukfo Taipan",
+      "names": {
+        "primary": "竺扶大班燒味",
+        "en": "Chukfo Taipan",
+        "ja": "",
+        "zh-Hant": "竺扶大班燒味"
+      },
+      "description": "Popular Wan Chai roast meat shop (opened 2020) known for crispy roast pork belly, roast goose, and twin-flavored rice.",
+      "tags": [
+        "wan-chai",
+        "roast-meat",
+        "siu-mei",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 501,
+        "quote": "We've arrived here in Wan Chai. At Zhufu Daban Roast Meat.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_chukfo_taipan"
+    },
+    {
+      "aliases": [
+        "利東街",
+        "Wedding Card Street",
+        "Lee Tung Avenue"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Wan Chai"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "street",
+      "name": "Lee Tung Street",
+      "names": {
+        "primary": "利東街",
+        "en": "Lee Tung Street",
+        "ja": "",
+        "zh-Hant": "利東街"
+      },
+      "description": "Former wedding-card printing street in Wan Chai, redeveloped into a European-style pedestrian area.",
+      "tags": [
+        "wan-chai",
+        "shopping",
+        "photo-spot",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 563,
+        "quote": "Now we've arrived at Lee Tung Street. This is the legendary Wedding Card Street.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_lee_tung_street"
+    },
+    {
+      "aliases": [
+        "Silk tea",
+        "絲茶",
+        "Silk"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Wan Chai"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "cafe",
+      "name": "Silk.",
+      "names": {
+        "primary": "絲茶",
+        "en": "Silk.",
+        "ja": "",
+        "zh-Hant": "絲茶"
+      },
+      "description": "Drink shop on Lee Tung Avenue; vloggers tried Alishan/Taiwanese-style coffee drinks here.",
+      "tags": [
+        "wan-chai",
+        "lee-tung",
+        "drinks",
+        "taiwanese"
+      ],
+      "source": {
+        "timestamp_sec": 597,
+        "quote": "Silk tea. Not sure what kind of drink it is. This place features all kinds of Taiwanese coffee.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.7,
+      "id": "hong_kong_silk"
+    },
+    {
+      "aliases": [
+        "美心皇宮",
+        "Maxim's Palace",
+        "Hong Kong City Hall Maxim's"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "restaurant",
+      "name": "Maxim's Palace City Hall",
+      "names": {
+        "primary": "美心皇宮（大會堂）",
+        "en": "Maxim's Palace City Hall",
+        "ja": "",
+        "zh-Hant": "美心皇宮（大會堂）"
+      },
+      "description": "Classic dim sum restaurant at Hong Kong City Hall with harbor and Central Ferris wheel views; cart-style service.",
+      "tags": [
+        "central",
+        "dim-sum",
+        "yum-cha",
+        "city-hall",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 769,
+        "quote": "Maxim's Palace has locations all over Hong Kong. There are six in total. The one in Central is the most recommended.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_maxim_s_palace_city_hall"
+    },
+    {
+      "aliases": [
+        "大會堂",
+        "City Hall"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Hong Kong City Hall",
+      "names": {
+        "primary": "香港大會堂",
+        "en": "Hong Kong City Hall",
+        "ja": "",
+        "zh-Hant": "香港大會堂"
+      },
+      "description": "1950s-style civic landmark in Central; home to Maxim's Palace and near the harbor.",
+      "tags": [
+        "central",
+        "landmark",
+        "architecture",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 707,
+        "quote": "Hong Kong City Hall. One unique feature here is the preservation of traditional Hong Kong food carts.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.9,
+      "id": "hong_kong_hong_kong_city_hall"
+    },
+    {
+      "aliases": [
+        "Halfway Coffee",
+        "Halfway's Halfway Coffee"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Sheung Wan"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "cafe",
+      "name": "Halfway Cafe",
+      "names": {
+        "primary": "Halfway Cafe",
+        "en": "Halfway Cafe",
+        "ja": "",
+        "zh-Hant": "Halfway Cafe"
+      },
+      "description": "Sheung Wan cafe known for vintage tableware, Longevity coffee cups, and a small museum-like collection of old cups.",
+      "tags": [
+        "sheung-wan",
+        "coffee",
+        "vintage",
+        "central",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 882,
+        "quote": "Halfway Cafe is known for its unique features. They use more vintage-style tableware.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_halfway_cafe"
+    },
+    {
+      "aliases": [
+        "中環街市"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "mall",
+      "name": "Central Market",
+      "names": {
+        "primary": "中環街市",
+        "en": "Central Market",
+        "ja": "",
+        "zh-Hant": "中環街市"
+      },
+      "description": "Revitalized Central Market; starting point for the Mid-Levels Escalator on the second floor.",
+      "tags": [
+        "central",
+        "market",
+        "shopping",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1158,
+        "quote": "Its starting point is at the second floor of the Central Market.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.9,
+      "id": "hong_kong_central_market"
+    },
+    {
+      "aliases": [
+        "longest outdoor escalator",
+        "中環半山扶手電梯",
+        "Mid-Levels Escalator"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Central-Mid-Levels Escalator",
+      "names": {
+        "primary": "中環至半山自動扶梯",
+        "en": "Central-Mid-Levels Escalator",
+        "ja": "",
+        "zh-Hant": "中環至半山自動扶梯"
+      },
+      "description": "World's longest outdoor covered escalator system, starting from Central Market toward Mid-Levels.",
+      "tags": [
+        "central",
+        "mid-levels",
+        "transport",
+        "landmark",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1151,
+        "quote": "Now we're going to ride the world's longest outdoor escalator.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_central_mid_levels_escalator"
+    },
+    {
+      "aliases": [
+        "大館",
+        "Central Police Station"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Tai Kwun",
+      "names": {
+        "primary": "大館",
+        "en": "Tai Kwun",
+        "ja": "",
+        "zh-Hant": "大館"
+      },
+      "description": "Heritage and arts center in the former Central Police Station compound; UNESCO Asia-Pacific heritage award site.",
+      "tags": [
+        "central",
+        "heritage",
+        "museum",
+        "arts",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1218,
+        "quote": "This is Tai Kwun. It used to be the old Central Police Station. Now it has become a heritage site and art center.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.98,
+      "id": "hong_kong_tai_kwun"
+    },
+    {
+      "aliases": [
+        "大巻伸嗣"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "person",
+      "name": "Shinji Ohmaki",
+      "names": {
+        "primary": "大巻伸嗣",
+        "en": "Shinji Ohmaki",
+        "ja": "大巻伸嗣",
+        "zh-Hant": "大巻伸嗣"
+      },
+      "description": "Artist behind the 2025 Symphony of Light exhibition and Waiting Pavilion installation at Tai Kwun.",
+      "tags": [
+        "artist",
+        "tai-kwun",
+        "exhibition"
+      ],
+      "source": {
+        "timestamp_sec": 1348,
+        "quote": "This exhibition here is called Symphony of Light. It's from the year 2025. The artist is Shinji Ohmaki.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "person": {
+        "role": "artist",
+        "bio": "Contemporary artist; Symphony of Light / Waiting Pavilion at Tai Kwun (2025).",
+        "related_places": [
+          "Tai Kwun"
+        ]
+      },
+      "confidence": 0.9,
+      "id": "hong_kong_shinji_ohmaki"
+    },
+    {
+      "aliases": [
+        "一樂燒鵝",
+        "Yat Lok Roast Goose"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "restaurant",
+      "name": "Yat Lok",
+      "names": {
+        "primary": "一樂燒鵝",
+        "en": "Yat Lok",
+        "ja": "",
+        "zh-Hant": "一樂燒鵝"
+      },
+      "description": "Michelin one-star Central roast goose specialist (family recipe since 1957); cramped shop, limited geese per batch.",
+      "tags": [
+        "central",
+        "roast-goose",
+        "michelin",
+        "siu-mei",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1389,
+        "quote": "Michelin one-star high-quality cooking has been around since 1957 when it first opened. The signature crispy roast goose... owner Mr. Chu's family secret recipe.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.85,
+      "id": "hong_kong_yat_lok"
+    },
+    {
+      "aliases": [
+        "Henderson"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "The Henderson",
+      "names": {
+        "primary": "The Henderson",
+        "en": "The Henderson",
+        "ja": "",
+        "zh-Hant": "The Henderson"
+      },
+      "description": "Zaha Hadid Architects building in Central inspired by a bauhinia flower bud, with smooth curved facade.",
+      "tags": [
+        "central",
+        "architecture",
+        "zaha-hadid",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1451,
+        "quote": "The Henderson was designed by the famous architecture firm Zaha Hadid Architects.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_the_henderson"
+    },
+    {
+      "aliases": [
+        "山頂纜車"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Peak Tram",
+      "names": {
+        "primary": "山頂纜車",
+        "en": "Peak Tram",
+        "ja": "",
+        "zh-Hant": "山頂纜車"
+      },
+      "description": "Historic funicular up to Victoria Peak; tickets often cheaper via advance purchase.",
+      "tags": [
+        "the-peak",
+        "transport",
+        "tourist",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1467,
+        "quote": "Today's plan is the Peak Tram. We also bought our tickets on Klook.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.95,
+      "id": "hong_kong_peak_tram"
+    },
+    {
+      "aliases": [
+        "太平山",
+        "The Peak",
+        "山頂"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "The Peak"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Victoria Peak",
+      "names": {
+        "primary": "太平山",
+        "en": "Victoria Peak",
+        "ja": "",
+        "zh-Hant": "太平山"
+      },
+      "description": "Iconic viewpoint over Victoria Harbour and Hong Kong skyline; best around sunset for day-to-night views.",
+      "tags": [
+        "the-peak",
+        "viewpoint",
+        "victoria-harbour",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1502,
+        "quote": "We have arrived at Victoria Peak. You can also see Victoria Harbour.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.98,
+      "id": "hong_kong_victoria_peak"
+    },
+    {
+      "aliases": [
+        "建民號",
+        "KINSMAN"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": "Central"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "restaurant",
+      "name": "Kinsman",
+      "names": {
+        "primary": "建民號",
+        "en": "Kinsman",
+        "ja": "",
+        "zh-Hant": "建民號"
+      },
+      "description": "Vintage Hong Kong-style cocktail bar in Central Mid-Levels with Wong Kar-wai / In the Mood for Love vibes; specialty Milk & Honey.",
+      "tags": [
+        "central",
+        "bar",
+        "cocktails",
+        "vintage",
+        "soho",
+        "hong-kong"
+      ],
+      "source": {
+        "timestamp_sec": 1608,
+        "quote": "Its specialty is Hong Kong-style cocktails. It's located halfway up the hill in Central. Speaking of In the Mood for Love, some inspiration comes from Wong Kar-wai.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.8,
+      "id": "hong_kong_kinsman"
+    },
+    {
+      "aliases": [
+        "Ding Ding",
+        "叮叮",
+        "Hong Kong Tram"
+      ],
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Hong Kong",
+        "country": "HK",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "needs_review": true,
+      "origin": "kol",
+      "type": "attraction",
+      "name": "Hong Kong Tramways",
+      "names": {
+        "primary": "香港電車",
+        "en": "Hong Kong Tramways",
+        "ja": "",
+        "zh-Hant": "香港電車"
+      },
+      "description": "Iconic double-decker tram (Ding Ding) along Hong Kong Island; first ride highlighted in the vlog.",
+      "tags": [
+        "hong-kong",
+        "tram",
+        "transport",
+        "tourist"
+      ],
+      "source": {
+        "timestamp_sec": 93,
+        "quote": "First time on the Ding Ding tram, super cute.",
+        "youtube_url": "https://youtu.be/dk2CNIwE1j0",
+        "youtube_title": "上環→中環→灣仔✨原來可以這麼chill！老派港式酒樓・米其林燒鵝・咖啡控必訪・懷舊系港味酒吧｜古蹟×文青拍照景點｜2025 Hong Kong｜yang and yang  #香港",
+        "kol_id": "yang_and_yang"
+      },
+      "confidence": 0.9,
+      "id": "hong_kong_hong_kong_tramways"
     }
   ]
 }
