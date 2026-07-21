@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-21T23:27:02Z",
+  "updated_at": "2026-07-21T23:28:33Z",
   "kols": [
     {
       "id": "demo_kol",
@@ -13,6 +13,12 @@
       "name": "Maibaru Travel",
       "youtube_channel": "",
       "notes": "Hokkaido winter rail trip vlogs (麦巴鲁旅行 / Maibaru Travel)."
+    },
+    {
+      "id": "pomato",
+      "name": "Pomato / 小薯茄",
+      "youtube_channel": "",
+      "notes": "Hong Kong YouTube food/comedy channel; Fanling street-food challenge ingest."
     }
   ],
   "demo_pins": [
@@ -62,6 +68,16 @@
       "country": "JP",
       "source_youtube_url": "https://youtu.be/6fL9aDhAlzs",
       "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.4840&lng=142.6270"
+    },
+    {
+      "id": "fanling",
+      "label": "HK Fanling",
+      "lat": 22.4946,
+      "lng": 114.1383,
+      "city": "Fanling",
+      "country": "HK",
+      "source_youtube_url": "https://youtu.be/s1-XJhXZu1g",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=22.4946&lng=114.1383"
     }
   ],
   "places": [
@@ -720,70 +736,7 @@
       }
     },
     {
-      "type": "street",
-      "name": "和隆街",
-      "names": {
-        "primary": "和隆街",
-        "en": "Wo Lung Street",
-        "zh-Hant": "和隆街"
-      },
-      "aliases": [
-        "協香麵包西餅",
-        "麵包西餅店",
-        "雞腿包",
-        "麥包",
-        "聯和墟街市",
-        "Luen Wo Market",
-        "牛腩河",
-        "牛腩麵",
-        "冰室"
-      ],
-      "description": "街坊誠仔推介後面和隆街有小食店（片中到訪時約4:30才開門）。",
-      "tags": [
-        "fanling",
-        "luen-wo-hui",
-        "bakery",
-        "hong-kong",
-        "snack",
-        "chicken-leg-bun",
-        "market",
-        "estate",
-        "noodles",
-        "beef-brisket",
-        "cha-chaan-teng",
-        "street"
-      ],
-      "source": {
-        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
-        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
-        "kol_id": "pomato",
-        "timestamp_sec": 752,
-        "quote": "後面和隆街 和隆街有一家小吃店"
-      },
-      "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
-        "city": "Fanling",
-        "country": "HK",
-        "area": "Luen Wo Hui"
-      },
-      "contact": {
-        "phone": "",
-        "website": ""
-      },
-      "enrichment": {
-        "rating": null,
-        "photos": [],
-        "maps_url": "",
-        "source": "osm"
-      },
-      "confidence": 0.7,
-      "needs_review": true,
-      "origin": "kol",
-      "id": "fanling_place"
-    },
-    {
+      "id": "hong_kong_pomato",
       "type": "person",
       "name": "Pomato",
       "names": {
@@ -822,20 +775,494 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": ""
       },
       "person": {
         "role": "KOL / YouTube hosts",
         "bio": "Hong Kong comedy/food YouTube channel 小薯茄",
         "related_places": [
-          "fanling_hip_heung"
+          "fanling_hip_heung",
+          "fanling_luen_wo_hui"
         ]
       },
       "confidence": 0.95,
       "needs_review": false,
-      "origin": "kol",
-      "id": "hong_kong_pomato"
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_hip_heung",
+      "type": "shop",
+      "name": "協香",
+      "names": {
+        "primary": "協香",
+        "en": "Hip Heung Bakery",
+        "zh-Hant": "協香"
+      },
+      "aliases": [
+        "協香麵包西餅",
+        "麵包西餅店"
+      ],
+      "description": "聯和墟老字號麵包西餅店，街坊推介出名雞腿包，亦有雞尾包與大麥包。",
+      "tags": [
+        "fanling",
+        "luen-wo-hui",
+        "bakery",
+        "hong-kong",
+        "snack"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 1265,
+        "quote": "如果是下午茶就那家協香 吃那個雞腿包"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "source": "osm"
+      },
+      "confidence": 0.9,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_hip_heung_chicken_leg_bun",
+      "type": "product",
+      "name": "協香雞腿包",
+      "names": {
+        "primary": "雞腿包",
+        "en": "Chicken Leg Bun",
+        "zh-Hant": "雞腿包"
+      },
+      "aliases": [
+        "雞腿包"
+      ],
+      "description": "協香招牌：整隻調味雞腿夾在麵包內，粉嶺聯和墟街坊推薦的目標美食。",
+      "tags": [
+        "fanling",
+        "bakery",
+        "chicken-leg-bun",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 1266,
+        "quote": "真的是整隻雞腿放在麵包內"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "source": "osm"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_hip_heung_wheat_bun",
+      "type": "product",
+      "name": "協香大麥包",
+      "names": {
+        "primary": "大麥包",
+        "en": "Large Wheat Bun",
+        "zh-Hant": "大麥包"
+      },
+      "aliases": [
+        "麥包"
+      ],
+      "description": "聯和墟麵包店街坊推介的大型麥包，宿主形容為充飢神器。",
+      "tags": [
+        "fanling",
+        "bakery",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 1448,
+        "quote": "最大那款麥包"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "source": "osm"
+      },
+      "confidence": 0.8,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_hip_heung_cocktail_bun",
+      "type": "product",
+      "name": "協香雞尾包",
+      "names": {
+        "primary": "雞尾包",
+        "en": "Cocktail Bun",
+        "zh-Hant": "雞尾包"
+      },
+      "aliases": [],
+      "description": "同店雞尾包；宿主試吃後覺得椰絲口感不錯。",
+      "tags": [
+        "fanling",
+        "bakery",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 1583,
+        "quote": "這個雞尾包沒吃過這麼好吃的"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "source": "osm"
+      },
+      "confidence": 0.75,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_luen_wo_hui",
+      "type": "street",
+      "name": "聯和墟",
+      "names": {
+        "primary": "聯和墟",
+        "en": "Luen Wo Hui",
+        "zh-Hant": "聯和墟"
+      },
+      "aliases": [
+        "聯和墟街市",
+        "Luen Wo Market"
+      ],
+      "description": "粉嶺多人區／街市一帶；影片多個美食推介與協香皆圍繞此處。",
+      "tags": [
+        "fanling",
+        "market",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 346,
+        "quote": "我們知道聯和墟是一個比較多人的地方"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "osm_url": "https://www.openstreetmap.org/node/2295984185",
+        "source": "osm"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_wah_ming_estate",
+      "type": "attraction",
+      "name": "華明邨",
+      "names": {
+        "primary": "華明邨",
+        "en": "Wah Ming Estate",
+        "zh-Hant": "華明邨"
+      },
+      "aliases": [],
+      "description": "街坊推介前往華明邨吃牛腩河；宿主乘 277X 巴士前往。",
+      "tags": [
+        "fanling",
+        "estate",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 184,
+        "quote": "你可以坐車去華明邨 有一間牛腩河"
+      },
+      "location": {
+        "lat": 22.484,
+        "lng": 114.1405,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Wah Ming Estate",
+        "address": "華明邨, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.484,114.1405",
+        "osm_url": "https://www.openstreetmap.org/way/192380981",
+        "source": "osm"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_wah_ming_beef_brisket",
+      "type": "restaurant",
+      "name": "華明邨雲吞牛腩河",
+      "names": {
+        "primary": "雲吞牛腩河",
+        "en": "Wonton Beef Brisket Noodle (Wah Ming)",
+        "zh-Hant": "雲吞牛腩河"
+      },
+      "aliases": [
+        "牛腩河",
+        "牛腩麵"
+      ],
+      "description": "華明邨快餐店旁邊的牛腩河／雲吞牛腩河；街坊師兄推介。店名未在片中清楚讀出。",
+      "tags": [
+        "fanling",
+        "noodles",
+        "beef-brisket",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 189,
+        "quote": "有一間牛腩河 在快餐店旁邊"
+      },
+      "location": {
+        "lat": 22.484,
+        "lng": 114.1405,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Wah Ming Estate",
+        "address": "華明邨, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.484,114.1405",
+        "source": "osm"
+      },
+      "confidence": 0.55,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_luen_wo_beef_brisket",
+      "type": "restaurant",
+      "name": "聯和墟牛腩麵（馬路旁）",
+      "names": {
+        "primary": "聯和墟牛腩麵",
+        "en": "Luen Wo Hui Beef Brisket Noodles",
+        "zh-Hant": "聯和墟牛腩麵"
+      },
+      "aliases": [
+        "牛腩麵"
+      ],
+      "description": "巴士司機推介：聯和墟馬路旁邊僅一間牛腩麵；帝庭軒總站下車，紅綠燈左手邊。店名未清楚讀出。",
+      "tags": [
+        "fanling",
+        "luen-wo-hui",
+        "noodles",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 870,
+        "quote": "聯和墟吃牛腩麵？只有一間 在馬路旁邊"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "source": "osm"
+      },
+      "confidence": 0.5,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_luen_wo_bing_sutt",
+      "type": "cafe",
+      "name": "聯和墟冰室（叉燒意粉）",
+      "names": {
+        "primary": "聯和墟冰室",
+        "en": "Luen Wo Hui Bing Sutt",
+        "zh-Hant": "聯和墟冰室"
+      },
+      "aliases": [
+        "冰室"
+      ],
+      "description": "街坊阿Will推介附近冰室常餐叉燒意粉；宿主點叉燒意粉與凍檸茶。店名未清楚讀出。",
+      "tags": [
+        "fanling",
+        "luen-wo-hui",
+        "cha-chaan-teng",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 985,
+        "quote": "冰室 叉燒意粉 常餐"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "source": "osm"
+      },
+      "confidence": 0.45,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "fanling_wo_lung_street",
+      "type": "street",
+      "name": "和隆街",
+      "names": {
+        "primary": "和隆街",
+        "en": "Wo Lung Street",
+        "zh-Hant": "和隆街"
+      },
+      "aliases": [],
+      "description": "街坊誠仔推介後面和隆街有小食店（片中到訪時約4:30才開門）。",
+      "tags": [
+        "fanling",
+        "street",
+        "hong-kong"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/s1-XJhXZu1g",
+        "youtube_title": "粉嶺街坊美食推薦挑戰（小薯茄 Pomato）",
+        "kol_id": "pomato",
+        "timestamp_sec": 752,
+        "quote": "後面和隆街 和隆街有一家小吃店"
+      },
+      "location": {
+        "lat": 22.4997,
+        "lng": 114.143,
+        "city": "Fanling",
+        "country": "HK",
+        "area": "Wo Lung Street / Luen Wo Hui",
+        "address": "聯和墟, 粉嶺"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.4997,114.143",
+        "source": "osm"
+      },
+      "confidence": 0.7,
+      "needs_review": true,
+      "origin": "kol"
     }
   ]
 }
