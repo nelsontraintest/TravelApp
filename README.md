@@ -70,35 +70,68 @@ If you’re not near the seed data (Hong Kong / Tokyo samples), choose **Demo pi
 
 | Path | Purpose |
 |------|---------|
-| `data/places.json` | Travel database (commit this after Hermes ingest) |
+| `data/places.json` | Travel database (commit/push after Hermes ingest) |
 | `data/schema.json` | Record shape |
 | `web/` | Nearby + Swipe UI |
-| `hermes-skill/kol-travel-ingest/` | Hermes skill: YouTube → extract → geocode → merge |
-| `scripts/serve.sh` | Local static server |
+| `hermes-skill/kol-travel-ingest/` | Hermes skill: YouTube → extract → geocode → merge → publish |
+| `scripts/publish_places.sh` | Validate, commit `places.json` only, push to GitHub Pages |
+| `scripts/serve.sh` | Local static server (dev) |
 | `AGENTS.md` | Short notes for Hermes when working in this repo |
 
 ---
 
-## Operate with Hermes + Gemma4 (ingest videos)
+## Ingest via WhatsApp (recommended)
 
-You run **Gemma4 via Hermes/Ollama** on your Mac. Hermes fills `data/places.json`; the website only reads that file (no local model on the phone).
+**Option A:** WhatsApp → Hermes extracts places → updates `data/places.json` → **git push** → GitHub Pages refreshes in about **1–2 minutes**. (Not an instant live database.)
+
+Full detail: [`hermes-skill/kol-travel-ingest/references/whatsapp.md`](hermes-skill/kol-travel-ingest/references/whatsapp.md)
 
 ### One-time setup
 
-1. Clone this repo (or use your existing local folder that matches this project).
-2. Install the skill into Hermes:
+1. Symlink the ingest skill (from your local clone):
 
 ```bash
 mkdir -p ~/.hermes/skills/media
 ln -sfn "$(pwd)/hermes-skill/kol-travel-ingest" ~/.hermes/skills/media/kol-travel-ingest
 ```
 
-3. Confirm Ollama + Gemma4 are running (`hermes` model already points at local Gemma4).
-4. Start a **new** Hermes session: `hermes`
+2. Confirm Ollama + Gemma4 are running.
 
-### Ingest one YouTube video
+3. Pair WhatsApp and start the Hermes gateway:
 
-Paste into Hermes:
+```bash
+hermes whatsapp          # scan QR with your phone
+hermes gateway install
+hermes gateway start
+hermes gateway status    # should show running
+```
+
+Keep your Mac on (and gateway running) when you want WhatsApp ingest to work.
+
+### Message to send on WhatsApp
+
+```text
+Ingest for travel_app:
+https://www.youtube.com/watch?v=VIDEO_ID
+KOL: <NAME>
+City: Hong Kong
+```
+
+Or paste only the YouTube URL — Hermes may ask one short follow-up.
+
+### After Hermes replies
+
+1. Wait **~1–2 minutes** for GitHub Pages.
+2. Reload https://nelsontraintest.github.io/TravelApp/web/ on iPhone.
+3. Check Nearby (location or Demo pin).
+
+Hermes should run `./scripts/publish_places.sh` for you (commits **only** `data/places.json`).
+
+---
+
+## Operate with Hermes CLI / chat (alternate)
+
+Same skill, without WhatsApp:
 
 ```text
 Use skill kol-travel-ingest.
@@ -114,25 +147,14 @@ Hermes will:
 2. Extract restaurants / shops / streets / people / products (Gemma4 → JSON)
 3. Geocode with the **maps** skill (OpenStreetMap)
 4. Merge into `data/places.json` and validate
+5. Publish with `./scripts/publish_places.sh` (unless you ask for local-only)
 
-### Publish new places to the live iPhone app
-
-After a good ingest:
-
-```bash
-cd /path/to/TravelApp
-git add data/places.json
-git commit -m "Add places from <KOL / video title>"
-git push origin main
-```
-
-Wait 1–2 minutes for GitHub Pages to update, then reload Safari on the iPhone.
-
-### Manual merge / validate
+### Manual merge / publish
 
 ```bash
 python3 hermes-skill/kol-travel-ingest/scripts/merge_places.py /tmp/travel_app/extract_xxx.json
 python3 hermes-skill/kol-travel-ingest/scripts/validate_places.py
+./scripts/publish_places.sh "Add places from <KOL / video title>"
 ```
 
 More detail: `hermes-skill/kol-travel-ingest/SKILL.md`
@@ -159,9 +181,11 @@ https://nelsontraintest.github.io/TravelApp/web/
 |---------|-----|
 | iPhone: “origin does not have permission to use Geolocation” on LAN HTTP | Use the **GitHub Pages https://** link above |
 | No spots nearby | Larger radius, Demo pin, or ingest places near your city |
-| Pages 404 after push | Wait a minute; confirm Pages is on for `main` / root |
-| Hermes skill not found | Re-run the `ln -sfn` symlink; start a **new** Hermes chat |
-| Transcript empty | Video may have captions disabled; Hermes skill will stop rather than invent places |
+| Pages 404 / stale after push | Wait 1–2 minutes; hard-refresh Safari |
+| WhatsApp: no Hermes reply | `hermes gateway status` / start gateway; re-pair with `hermes whatsapp` |
+| Hermes skill not found | Re-run the `ln -sfn` symlink; start a **new** Hermes session |
+| Transcript empty | Video may have captions disabled; Hermes should stop rather than invent places |
+| Publish / git push failed | Check `gh auth status` and that `git push origin main` works on the Mac |
 
 ---
 
@@ -170,12 +194,13 @@ https://nelsontraintest.github.io/TravelApp/web/
 - [ ] Open https://nelsontraintest.github.io/TravelApp/web/ on iPhone
 - [ ] Allow location (or use Demo pin HK Central)
 - [ ] Try **Swipe**, then return to **Nearby**
-- [ ] Symlink Hermes skill and ingest one KOL video
-- [ ] `git push` updated `data/places.json` and reload the phone
+- [ ] Symlink Hermes skill; pair WhatsApp; start gateway
+- [ ] Send one YouTube URL on WhatsApp; wait for reply + Pages; reload the phone
 
 ---
 
 ## Optional later
 
+- Live database (Option B) for near-instant updates without waiting on Pages
 - Google Places API for phone / reviews / photos (cache into `places.json`)
 - Google Sheet as a human review UI synced to JSON

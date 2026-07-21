@@ -1,13 +1,13 @@
 ---
 name: kol-travel-ingest
-description: "Extract restaurants, shops, streets, malls, people, and products from travel KOL YouTube videos into travel_app places.json. Use when the user pastes a YouTube URL, asks to ingest a travel vlog, build a travel database, or enrich place names with maps/geocoding."
-version: 1.0.0
+description: "Extract restaurants, shops, streets, malls, people, and products from travel KOL YouTube videos into travel_app places.json, then publish to GitHub Pages. Use when the user pastes a YouTube URL (including WhatsApp), asks to ingest a travel vlog, build a travel database, enrich place names, or update the live travel_app site."
+version: 1.1.0
 author: travel_app
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [youtube, travel, kol, places, ingest, gemma, travel_app]
+    tags: [youtube, travel, kol, places, ingest, gemma, travel_app, whatsapp]
     related_skills: [youtube-content, maps]
     requires_toolsets: [terminal]
 ---
@@ -17,14 +17,17 @@ metadata:
 ## Overview
 
 Turn a travel KOL YouTube video into structured places for the **travel_app** web app
-(`travel_app/data/places.json`). Optimized for **local Gemma4** via Hermes:
-short steps, strict JSON, and helper scripts — avoid huge single prompts.
+(`data/places.json`), then **git push** so GitHub Pages updates the live iPhone site
+(Option A — usually ready in 1–2 minutes after push).
+
+Optimized for **local Gemma4** via Hermes: short steps, strict JSON, helper scripts.
+WhatsApp operator details: `references/whatsapp.md`.
 
 ## When to Use
 
-- User pastes a YouTube travel/vlog URL and wants places extracted
+- User pastes a YouTube travel/vlog URL (CLI, chat, or **WhatsApp**)
 - User says: ingest video, build travel DB, scrape KOL mentions, enrich restaurants
-- User wants to append results into `data/places.json`
+- User wants to append results into `data/places.json` and update the live app
 
 Don't use for: general YouTube summaries (use `youtube-content`), or live "near me" queries (that's the web app).
 
@@ -42,6 +45,14 @@ MAPS=~/.hermes/skills/productivity/maps/scripts/maps_client.py
 If `TRAVEL_APP` differs, ask once and remember for the session.
 
 ## Workflow (follow in order)
+
+### 0. WhatsApp / minimal prompts
+
+If the user only sends a YouTube URL:
+
+- Infer **KOL name** from the channel/title when possible; otherwise ask **one** short question
+- Infer **city/region** from the title/description when possible; otherwise ask **one** short question
+- Then continue the workflow below
 
 ### 1. Fetch transcript
 
@@ -140,17 +151,50 @@ python3 "$SKILL_DIR/scripts/merge_places.py" /tmp/travel_app/extract_<videoid>.j
 python3 "$SKILL_DIR/scripts/validate_places.py"
 ```
 
-Completion criteria: validate prints `"ok": true`. Summarize for the user: added / updated counts, list of names, which still `needs_review`.
+Completion criteria: validate prints `"ok": true`. Keep added/updated counts for the reply.
 
-### 5. Tell the user how to see results
+### 5. Publish to GitHub Pages (default)
+
+```bash
+cd "$TRAVEL_APP"
+./scripts/publish_places.sh "Add places from <KOL or video title>"
+```
+
+This validates again, commits **only** `data/places.json`, and pushes `origin/main`.
+
+Completion criteria: script prints the live URL. Do **not** invent other git commands; use this script.
+
+### 6. Reply to the user (WhatsApp / chat)
+
+Send a short summary:
+
+- Added / updated counts and place names (brief list)
+- Which still `needs_review`
+- Live app: `https://nelsontraintest.github.io/TravelApp/web/`
+- Tell them to **wait ~1–2 minutes**, then reload Safari on iPhone
+
+### Dev-only: local preview
+
+Only if the user asks to test without publishing:
 
 ```bash
 cd "$TRAVEL_APP" && ./scripts/serve.sh
 ```
 
-Open the URL on iPhone (same Wi‑Fi) → **Nearby** or **Swipe**.
+## One-shot prompts
 
-## One-shot user prompt (copy for beginners)
+### WhatsApp (recommended)
+
+```text
+Ingest for travel_app:
+https://www.youtube.com/watch?v=VIDEO_ID
+KOL: <NAME>
+City: Hong Kong
+```
+
+Or just the YouTube URL — then infer or ask one clarifying question.
+
+### Hermes CLI / chat
 
 ```text
 Use skill kol-travel-ingest.
@@ -166,7 +210,8 @@ City/region hint: <e.g. Hong Kong / Tokyo>
 2. **Skipping timestamps** — always set `timestamp_sec` when possible.
 3. **Geocoding without city** — add region hint from video title/description.
 4. **One giant prompt** — chunk for Gemma4; merge JSON after.
-5. **Forgetting validate** — always run `validate_places.py` after merge.
+5. **Forgetting publish** — always run `publish_places.sh` after a successful merge (unless user said local-only).
+6. **Committing extra files** — never `git add -A`; only the publish script’s `data/places.json`.
 
 ## Verification checklist
 
@@ -175,4 +220,5 @@ City/region hint: <e.g. Hong Kong / Tokyo>
 - [ ] Maps enrichment attempted for place-like types
 - [ ] `merge_places.py` reported added/updated
 - [ ] `validate_places.py` ok
-- [ ] User told how to refresh the web app
+- [ ] `publish_places.sh` pushed successfully
+- [ ] User got live URL + 1–2 min reload note
