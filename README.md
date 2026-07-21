@@ -86,25 +86,105 @@ If you’re not near the seed data (Hong Kong / Tokyo samples), choose **Demo pi
 
 Full detail: [`hermes-skill/kol-travel-ingest/references/whatsapp.md`](hermes-skill/kol-travel-ingest/references/whatsapp.md)
 
-### One-time setup
+### Hermes agent: step-by-step
 
-1. Symlink the ingest skill (from your local clone):
+#### Part 1 — One-time setup (Mac)
+
+1. Open **Terminal** (Cursor terminal or Mac Terminal).
+
+2. Go to your local clone:
+
+```bash
+cd /Users/nlee/DevelopmentProjects/projects/travel_app
+```
+
+(Use your actual clone path if different.)
+
+3. Link the ingest skill into Hermes:
 
 ```bash
 mkdir -p ~/.hermes/skills/media
 ln -sfn "$(pwd)/hermes-skill/kol-travel-ingest" ~/.hermes/skills/media/kol-travel-ingest
 ```
 
-2. Confirm Ollama + Gemma4 are running.
-
-3. Pair WhatsApp and start the Hermes gateway:
+4. Confirm **Ollama + Gemma4** are running:
 
 ```bash
-hermes whatsapp          # scan QR with your phone
+ollama list
+```
+
+You should see `gemma4latest-64K:latest` (or similar). Start the Ollama app if needed.
+
+5. Pair **WhatsApp** with Hermes (QR — you must do this once):
+
+```bash
+hermes whatsapp
+```
+
+- A QR code appears in Terminal  
+- On iPhone: **WhatsApp → Settings → Linked devices → Link a device**  
+- Scan the QR  
+
+6. Install and start the **Hermes gateway** (receives WhatsApp while Mac is on):
+
+```bash
 hermes gateway install
 hermes gateway start
-hermes gateway status    # should show running
+hermes gateway status
 ```
+
+You want **Gateway is running**. After pairing WhatsApp, if messages don’t arrive, run `hermes gateway restart`.
+
+7. Confirm **git push** works (Hermes uses this to publish):
+
+```bash
+git push origin main
+```
+
+#### Part 2 — Every time you ingest a video
+
+1. Keep your Mac **awake** and check the gateway:
+
+```bash
+hermes gateway status
+```
+
+If stopped: `hermes gateway start`
+
+2. Send a message on **WhatsApp** to Hermes:
+
+```text
+Ingest for travel_app:
+https://www.youtube.com/watch?v=VIDEO_ID
+KOL: <NAME>
+City: Hong Kong
+```
+
+Or paste only the YouTube URL — Hermes may ask one short follow-up (KOL name or city).
+
+3. **Wait** for Hermes to finish (can take several minutes on long videos). It will:
+
+   - Fetch the transcript  
+   - Extract places with Gemma4  
+   - Geocode via the maps skill  
+   - Merge into `data/places.json`  
+   - Run `./scripts/publish_places.sh` (commit + push)  
+   - Reply on WhatsApp with a summary  
+
+4. On iPhone: wait **~1–2 minutes** for GitHub Pages, then reload  
+   **https://nelsontraintest.github.io/TravelApp/web/**  
+   and check **Nearby** (location or Demo pin).
+
+#### What a successful Hermes reply looks like
+
+- Added / updated place counts (brief name list)  
+- Some entries may still `need_review`  
+- Live app: https://nelsontraintest.github.io/TravelApp/web/  
+- Reminder to wait 1–2 minutes, then reload Safari  
+
+### One-time setup (quick reference)
+
+Same as Part 1 above — symlink skill, Ollama/Gemma4, `hermes whatsapp`, `hermes gateway start`.
 
 Keep your Mac on (and gateway running) when you want WhatsApp ingest to work.
 
@@ -131,7 +211,15 @@ Hermes should run `./scripts/publish_places.sh` for you (commits **only** `data/
 
 ## Operate with Hermes CLI / chat (alternate)
 
-Same skill, without WhatsApp:
+Same skill as WhatsApp, but you type in Terminal instead of messaging.
+
+1. Start Hermes:
+
+```bash
+hermes
+```
+
+2. Paste:
 
 ```text
 Use skill kol-travel-ingest.
@@ -182,7 +270,8 @@ https://nelsontraintest.github.io/TravelApp/web/
 | iPhone: “origin does not have permission to use Geolocation” on LAN HTTP | Use the **GitHub Pages https://** link above |
 | No spots nearby | Larger radius, Demo pin, or ingest places near your city |
 | Pages 404 / stale after push | Wait 1–2 minutes; hard-refresh Safari |
-| WhatsApp: no Hermes reply | `hermes gateway status` / start gateway; re-pair with `hermes whatsapp` |
+| WhatsApp: no Hermes reply | `hermes gateway status` → `hermes gateway start`; re-pair with `hermes whatsapp`; try `hermes gateway restart` |
+| Gateway up but Hermes silent | Confirm Ollama/Gemma4 running (`ollama list`); check `hermes logs` |
 | Hermes skill not found | Re-run the `ln -sfn` symlink; start a **new** Hermes session |
 | Transcript empty | Video may have captions disabled; Hermes should stop rather than invent places |
 | Publish / git push failed | Check `gh auth status` and that `git push origin main` works on the Mac |
