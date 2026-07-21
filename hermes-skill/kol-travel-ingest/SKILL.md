@@ -83,6 +83,7 @@ Output **only** a JSON array (no markdown fences) matching:
   {
     "type": "restaurant",
     "name": "Exact Name",
+    "names": { "primary": "日本語名", "en": "English Name", "ja": "日本語名", "zh-Hant": "繁體中文名" },
     "aliases": [],
     "description": "one short sentence from context",
     "tags": ["city-or-area", "food-type"],
@@ -102,7 +103,7 @@ Output **only** a JSON array (no markdown fences) matching:
       "area": "district if known"
     },
     "contact": { "phone": "", "website": "" },
-    "enrichment": { "rating": null, "photos": [] },
+    "enrichment": { "rating": null, "photos": [], "maps_url": "" },
     "confidence": 0.7,
     "needs_review": true,
     "origin": "kol"
@@ -130,41 +131,33 @@ mkdir -p /tmp/travel_app
 # save extraction as /tmp/travel_app/extract_<videoid>.json
 ```
 
-### 3. Enrich with maps (geocode)
+### 3–5. Enrich + Merge + Validate + Publish (one command)
 
-For each place with a usable name + city/area (skip vague / person-only without place):
+Instead of manually geocoding each place, run the **ingest pipeline**:
 
 ```bash
-python3 "$MAPS" search "NAME, CITY"
+python3 "$SKILL_DIR/scripts/ingest_pipeline.py" /tmp/travel_app/extract_<videoid>.json --publish
 ```
 
-If a clear hit exists, fill `location.lat`, `location.lng`, `location.address`, and set `enrichment.osm_url` if available. Do **not** overwrite a good human address with a worse one.
+This single command does:
 
-Rate-limit: pause ~1s between Nominatim searches. Completion criteria: every high-confidence restaurant/cafe/shop/mall/attraction either has coords or an explicit note why geocode failed.
+1. **Enrich** — geocodes via OSM, fills `contact.phone`, `contact.website`, `names.ja`/`names.zh-Hant`, `enrichment.maps_url`, and photos (when OSM has them). Rate-limited 1s per request.
+2. **Merge** — upserts into `data/places.json` + auto-updates `demo_pins` (one per city centroid). Prints `demo_pins_updated` with preview area labels.
+3. **Validate** — checks schema. Fails if invalid.
+4. **Publish** — commits only `data/places.json` and pushes to `origin/main`.
 
-Optional later: Google Places API for phone/reviews/photos — not required for MVP. Prefer maps skill first (no API key).
+Omit `--publish` to do steps 1–3 without pushing (for local review).
 
-### 4. Merge into the database
+Completion criteria: pipeline prints `"ok": true` from validate. Keep added/updated counts for the reply. Mention new preview areas.
+
+**Fallback (manual steps):** if the pipeline fails, run individually:
 
 ```bash
-python3 "$SKILL_DIR/scripts/merge_places.py" /tmp/travel_app/extract_<videoid>.json
+python3 "$SKILL_DIR/scripts/enrich_places.py" /tmp/travel_app/extract_<videoid>.json > /tmp/travel_app/enriched.json
+python3 "$SKILL_DIR/scripts/merge_places.py" /tmp/travel_app/enriched.json
 python3 "$SKILL_DIR/scripts/validate_places.py"
-```
-
-`merge_places.py` also **upserts `demo_pins`** — one pin per city in the incoming batch (centroid of geocoded places). The script prints `demo_pins_updated` with pin labels; mention any new or updated preview areas in your reply (e.g. “Preview area: Furano, Hokkaido”).
-
-Completion criteria: validate prints `"ok": true`. Keep added/updated counts for the reply.
-
-### 5. Publish to GitHub Pages (default)
-
-```bash
-cd "$TRAVEL_APP"
 ./scripts/publish_places.sh "Add places from <KOL or video title>"
 ```
-
-This validates again, commits **only** `data/places.json`, and pushes `origin/main`.
-
-Completion criteria: script prints the live URL. Do **not** invent other git commands; use this script.
 
 ### 6. Reply to the user (WhatsApp / chat)
 

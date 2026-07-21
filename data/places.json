@@ -98,7 +98,9 @@
       "contact": {},
       "enrichment": {
         "rating": 4.6,
-        "photos": []
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2936,114.1722",
+        "source": "osm"
       },
       "confidence": 1.0,
       "needs_review": false,
@@ -136,7 +138,9 @@
       },
       "enrichment": {
         "rating": 4.3,
-        "photos": []
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.281,114.1553",
+        "source": "osm"
       },
       "confidence": 0.85,
       "needs_review": true,
@@ -176,11 +180,18 @@
       },
       "enrichment": {
         "rating": 4.4,
-        "photos": []
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2855,114.158",
+        "source": "osm"
       },
       "confidence": 1.0,
       "needs_review": false,
-      "origin": "kol"
+      "origin": "kol",
+      "names": {
+        "zh-Hant": "國際金融中心商場",
+        "en": "IFC Mall",
+        "primary": "國際金融中心商場 IFC Mall"
+      }
     },
     {
       "id": "hk_temple_street",
@@ -214,11 +225,18 @@
       "contact": {},
       "enrichment": {
         "rating": 4.2,
-        "photos": []
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.3062,114.1701",
+        "source": "osm"
       },
       "confidence": 1.0,
       "needs_review": false,
-      "origin": "kol"
+      "origin": "kol",
+      "names": {
+        "zh-Hant": "廟街夜市",
+        "en": "Temple Street Night Market",
+        "primary": "廟街夜市 Temple Street Night Market"
+      }
     },
     {
       "id": "hk_dim_sum_seed",
@@ -254,11 +272,18 @@
       },
       "enrichment": {
         "rating": 4.1,
-        "photos": []
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2859,114.1517",
+        "source": "osm"
       },
       "confidence": 0.9,
       "needs_review": false,
-      "origin": "kol"
+      "origin": "kol",
+      "names": {
+        "zh-Hant": "蓮香樓",
+        "en": "Lin Heung Tea House",
+        "primary": "蓮香樓 Lin Heung Tea House"
+      }
     },
     {
       "id": "tyo_shibuya_crossing",
@@ -291,11 +316,21 @@
       "contact": {},
       "enrichment": {
         "rating": 4.7,
-        "photos": []
+        "photos": [
+          "https://commons.wikimedia.org/wiki/File:2019_Shibuya_Crossing_-_Shibuya_Scramble_Square_-_SHIBUYA_SKY_1.jpg"
+        ],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=35.6595,139.7005",
+        "source": "osm"
       },
       "confidence": 1.0,
       "needs_review": false,
-      "origin": "kol"
+      "origin": "kol",
+      "names": {
+        "ja": "渋谷駅前交差点",
+        "zh-Hant": "澀谷路口",
+        "en": "Shibuya Scramble Crossing",
+        "primary": "渋谷駅前交差点"
+      }
     },
     {
       "id": "pref_hk_cafe_similar",
@@ -327,11 +362,16 @@
       "contact": {},
       "enrichment": {
         "rating": 4.5,
-        "photos": []
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.2819,114.1558",
+        "source": "osm"
       },
       "confidence": 0.7,
       "needs_review": false,
-      "origin": "like_preference"
+      "origin": "like_preference",
+      "names": {
+        "en": "Cupping Room"
+      }
     },
     {
       "type": "shop",
@@ -369,12 +409,19 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "osm_url": "https://www.openstreetmap.org/way/530759187"
+        "osm_url": "https://www.openstreetmap.org/way/530759187",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.3446569,142.3789256",
+        "source": "osm"
       },
       "confidence": 0.9,
       "needs_review": false,
       "origin": "kol",
-      "id": "furano_tsuruha_drug_furano"
+      "id": "furano_tsuruha_drug_furano",
+      "names": {
+        "ja": "ツルハドラッグ",
+        "en": "Tsuruha",
+        "primary": "ツルハドラッグ"
+      }
     },
     {
       "type": "restaurant",
@@ -412,12 +459,19 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "osm_url": "https://www.openstreetmap.org/node/4931127322"
+        "osm_url": "https://www.openstreetmap.org/node/4931127322",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.3452376,142.3912095",
+        "source": "osm"
       },
       "confidence": 0.95,
       "needs_review": false,
       "origin": "kol",
-      "id": "furano_kumagera"
+      "id": "furano_kumagera",
+      "names": {
+        "ja": "くまげら",
+        "en": "Kumagera Rae Beef Rice Restaurant",
+        "primary": "くまげら"
+      }
     },
     {
       "type": "hotel",
@@ -456,7 +510,8 @@
       },
       "enrichment": {
         "rating": null,
-        "photos": []
+        "photos": [],
+        "source": "osm"
       },
       "confidence": 0.75,
       "needs_review": true,
@@ -500,7 +555,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "osm_url": "https://www.openstreetmap.org/node/4198862290"
+        "osm_url": "https://www.openstreetmap.org/node/4198862290",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.3382588,142.3607936",
+        "source": "osm"
       },
       "confidence": 0.95,
       "needs_review": false,
@@ -539,17 +596,24 @@
       },
       "contact": {
         "phone": "",
-        "website": ""
+        "website": "https://www.princehotels.co.jp/furano-area/summer/ningle/"
       },
       "enrichment": {
         "rating": null,
         "photos": [],
-        "osm_url": "https://www.openstreetmap.org/node/4607790389"
+        "osm_url": "https://www.openstreetmap.org/node/4607790389",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.3234308,142.3563389",
+        "source": "osm"
       },
       "confidence": 0.95,
       "needs_review": false,
       "origin": "kol",
-      "id": "furano_ningle_terrace"
+      "id": "furano_ningle_terrace",
+      "names": {
+        "ja": "ニングルテラス",
+        "en": "Ningle Terrace",
+        "primary": "ニングルテラス"
+      }
     },
     {
       "type": "attraction",
@@ -584,17 +648,24 @@
       },
       "contact": {
         "phone": "",
-        "website": ""
+        "website": "https://www.biei-hokkaido.jp/ja/sightseeing/shirogane-blue-pond/"
       },
       "enrichment": {
         "rating": null,
         "photos": [],
-        "osm_url": "https://www.openstreetmap.org/way/303771940"
+        "osm_url": "https://www.openstreetmap.org/way/303771940",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.4934902,142.6140976",
+        "source": "osm"
       },
       "confidence": 0.95,
       "needs_review": false,
       "origin": "kol",
-      "id": "biei_blue_pond_aoiike"
+      "id": "biei_blue_pond_aoiike",
+      "names": {
+        "ja": "青い池",
+        "en": "Blue Pond",
+        "primary": "青い池"
+      }
     },
     {
       "type": "attraction",
@@ -629,17 +700,24 @@
       },
       "contact": {
         "phone": "",
-        "website": ""
+        "website": "https://www.biei-hokkaido.jp/ja/sightseeing/shirahige-waterfalls/"
       },
       "enrichment": {
         "rating": null,
         "photos": [],
-        "osm_url": "https://www.openstreetmap.org/node/1459792918"
+        "osm_url": "https://www.openstreetmap.org/node/1459792918",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.4745828,142.6391874",
+        "source": "osm"
       },
       "confidence": 0.95,
       "needs_review": false,
       "origin": "kol",
-      "id": "biei_shirahige_falls"
+      "id": "biei_shirahige_falls",
+      "names": {
+        "ja": "白ひげの滝",
+        "en": "Shirahige Falls",
+        "primary": "白ひげの滝"
+      }
     }
   ]
 }

@@ -5,6 +5,13 @@ import {
   locationFromQuery,
 } from "./geo.js";
 import { rankNearby } from "./recommend.js";
+import {
+  escapeHtml,
+  localNameLine,
+  photoHtml,
+  quoteHtml,
+  actionRow,
+} from "./place-card.js";
 
 const statusEl = document.getElementById("status");
 const listEl = document.getElementById("list");
@@ -117,33 +124,25 @@ function render() {
       .join("");
 
     card.innerHTML = `
+      ${photoHtml(place)}
       <div class="row" style="justify-content:space-between">
         <h3>${escapeHtml(place.name)}</h3>
         <span class="distance">${formatDistance(distanceKm)}</span>
       </div>
+      ${localNameLine(place)}
       <div class="meta">
         <span class="chip">${escapeHtml(place.type)}</span>
         <span class="chip origin-${suggestionReason === "like_preference" ? "like" : "kol"}">${originLabel}</span>
         ${tags}
       </div>
       <p class="muted">${escapeHtml(place.description || place.location?.address || "")}</p>
-      ${
-        place.source?.quote
-          ? `<p class="quote">${escapeHtml(place.source.quote)}</p>`
-          : ""
-      }
+      ${quoteHtml(place)}
+      ${actionRow(place)}
     `;
     listEl.appendChild(card);
   });
 }
 
-function escapeHtml(s) {
-  return String(s || "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
-}
 
 function previewStatusMessage(demo) {
   const useAllInArea = radiusEl.value === "all";

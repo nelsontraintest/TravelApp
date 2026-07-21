@@ -54,6 +54,23 @@ def validate(db: dict) -> list[str]:
             lat, lng = loc.get("lat"), loc.get("lng")
             if (lat is None) ^ (lng is None):
                 errors.append(f"{prefix}: lat/lng must both be set or both null")
+        names = place.get("names")
+        if names is not None and not isinstance(names, dict):
+            errors.append(f"{prefix}: names must be an object")
+        enrichment = place.get("enrichment") or {}
+        if isinstance(enrichment, dict):
+            maps_url = enrichment.get("maps_url")
+            if maps_url and not maps_url.startswith("http"):
+                errors.append(f"{prefix}: enrichment.maps_url must be a URL")
+            for photo_url in (enrichment.get("photos") or []):
+                if photo_url and not photo_url.startswith("http"):
+                    errors.append(f"{prefix}: enrichment.photos contains non-URL")
+                    break
+        contact = place.get("contact") or {}
+        if isinstance(contact, dict):
+            website = contact.get("website")
+            if website and not website.startswith("http"):
+                errors.append(f"{prefix}: contact.website must be a URL")
 
     demo_pins = db.get("demo_pins")
     if demo_pins is not None:

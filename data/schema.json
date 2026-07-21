@@ -54,6 +54,16 @@
           "enum": ["restaurant", "cafe", "shop", "street", "mall", "attraction", "hotel", "person", "product", "other"]
         },
         "name": { "type": "string" },
+        "names": {
+          "type": "object",
+          "description": "Localized names for the place",
+          "properties": {
+            "primary": { "type": "string" },
+            "en": { "type": "string" },
+            "ja": { "type": "string" },
+            "zh-Hant": { "type": "string" }
+          }
+        },
         "aliases": { "type": "array", "items": { "type": "string" } },
         "description": { "type": "string" },
         "tags": { "type": "array", "items": { "type": "string" } },
@@ -94,7 +104,9 @@
             "review_count": { "type": ["integer", "null"] },
             "photos": { "type": "array", "items": { "type": "string" } },
             "osm_url": { "type": "string" },
-            "google_place_id": { "type": "string" }
+            "maps_url": { "type": "string" },
+            "google_place_id": { "type": "string" },
+            "source": { "type": "string", "enum": ["osm", "google_places"] }
           }
         },
         "person": {

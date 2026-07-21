@@ -5,6 +5,13 @@ import {
   getLikes,
   likePlace,
 } from "./storage.js";
+import {
+  escapeHtml,
+  localNameLine,
+  photoHtml,
+  quoteHtml,
+  actionRow,
+} from "./place-card.js";
 
 const deckEl = document.getElementById("deck");
 const statusEl = document.getElementById("status");
@@ -38,14 +45,6 @@ function rebuildQueue() {
     const bc = b.location?.lat != null ? 0 : 1;
     return ac - bc;
   });
-}
-
-function escapeHtml(s) {
-  return String(s || "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
 }
 
 function showEmpty() {
@@ -92,16 +91,15 @@ function renderCard() {
         <span class="chip">${escapeHtml(current.type)}</span>
         ${tags}
       </div>
+      ${photoHtml(current)}
       <h2>${escapeHtml(current.name)}</h2>
+      ${localNameLine(current)}
       <p class="muted">${escapeHtml(current.location?.city || "")}${
         current.location?.area ? " · " + escapeHtml(current.location.area) : ""
       }</p>
       <p class="desc">${escapeHtml(current.description || "")}</p>
-      ${
-        current.source?.quote
-          ? `<p class="quote">${escapeHtml(current.source.quote)}</p>`
-          : ""
-      }
+      ${quoteHtml(current)}
+      ${actionRow(current)}
     </article>
   `;
 

@@ -17,33 +17,50 @@
 
 Same `name` + same `city` → one record. Keep earliest timestamp; merge tags/aliases.
 
+## Names (localized)
+
+Capture local names when spoken or shown on screen:
+
+- `names.primary` — the local/native name (日本語 for Japan, 繁體中文 for HK/TW)
+- `names.en` — English name
+- `names.ja` — Japanese name (if place is in Japan or has Japanese signage)
+- `names.zh-Hant` — Traditional Chinese name (if spoken/shown in 繁體中文)
+
+Keep `name` as the display default (usually English or romanized). The `names` object is optional — fill what you know from the transcript.
+
 ## Example (restaurant)
 
 ```json
 {
   "type": "restaurant",
-  "name": "Lin Heung Tea House",
-  "aliases": ["蓮香樓"],
-  "description": "Old-school dim sum mentioned during Sheung Wan walk.",
-  "tags": ["dim-sum", "sheung-wan", "hong-kong"],
+  "name": "Kumagera",
+  "names": {
+    "primary": "くまげら",
+    "en": "Kumagera",
+    "ja": "くまげら",
+    "zh-Hant": ""
+  },
+  "aliases": ["くまげら"],
+  "description": "Local Furano restaurant known for venison and mountain hot pot.",
+  "tags": ["furano", "restaurant", "hot-pot", "hokkaido", "japan"],
   "source": {
-    "youtube_url": "https://www.youtube.com/watch?v=EXAMPLE",
-    "youtube_title": "HK food walk",
-    "kol_id": "example_kol",
-    "timestamp_sec": 420,
-    "quote": "Let's try Lin Heung for push-cart dim sum"
+    "youtube_url": "https://youtu.be/6fL9aDhAlzs",
+    "youtube_title": "北海道 冬日鐵道之旅",
+    "kol_id": "maibaru_travel",
+    "timestamp_sec": 120,
+    "quote": "在地料理店「くまげら」 紅肉是鹿肉 還有鴨肉和雞肉"
   },
   "location": {
     "lat": null,
     "lng": null,
     "address": "",
-    "city": "Hong Kong",
-    "country": "HK",
-    "area": "Sheung Wan"
+    "city": "Furano",
+    "country": "JP",
+    "area": "Furano"
   },
   "contact": { "phone": "", "website": "" },
-  "enrichment": { "rating": null, "photos": [] },
-  "confidence": 0.85,
+  "enrichment": { "rating": null, "photos": [], "maps_url": "" },
+  "confidence": 0.95,
   "needs_review": true,
   "origin": "kol"
 }
