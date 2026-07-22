@@ -38,6 +38,33 @@ export function mapsLink(place) {
   return `<a class="action-link action-map" href="${escapeHtml(url)}" target="_blank" rel="noopener">地圖</a>`;
 }
 
+/** Build a YouTube URL, optionally jumping to timestamp_sec. */
+export function youtubeWatchUrl(place) {
+  const source = place.source || {};
+  const raw = (source.youtube_url || "").trim();
+  if (!raw) return "";
+  if (/SEED_DEMO/i.test(raw)) return "";
+  const t = source.timestamp_sec;
+  if (typeof t !== "number" || !Number.isFinite(t) || t < 0) return raw;
+  const sec = Math.floor(t);
+  try {
+    const url = new URL(raw);
+    url.searchParams.set("t", `${sec}`);
+    return url.toString();
+  } catch {
+    const sep = raw.includes("?") ? "&" : "?";
+    return `${raw}${sep}t=${sec}`;
+  }
+}
+
+export function youtubeLink(place) {
+  const url = youtubeWatchUrl(place);
+  if (!url) return "";
+  const title = (place.source || {}).youtube_title || "";
+  const titleAttr = title ? ` title="${escapeHtml(title)}"` : "";
+  return `<a class="action-link action-youtube" href="${escapeHtml(url)}" target="_blank" rel="noopener"${titleAttr}>影片</a>`;
+}
+
 export function contactHtml(place) {
   const contact = place.contact || {};
   const parts = [];
@@ -58,9 +85,10 @@ export function quoteHtml(place) {
 
 export function actionRow(place) {
   const map = mapsLink(place);
+  const youtube = youtubeLink(place);
   const contact = contactHtml(place);
-  if (!map && !contact) return "";
-  return `<div class="action-row">${map}${contact}</div>`;
+  if (!map && !youtube && !contact) return "";
+  return `<div class="action-row">${map}${youtube}${contact}</div>`;
 }
 
 export function addressLine(place) {

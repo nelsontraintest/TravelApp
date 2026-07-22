@@ -552,6 +552,12 @@ input[type="number"] {
   background: var(--cream);
 }
 
+.action-youtube {
+  background: #c45c4a;
+  color: #fff;
+  border-color: #a3483a;
+}
+
 .address {
   font-size: 0.78rem;
   margin: 0.2rem 0 0;
