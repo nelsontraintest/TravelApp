@@ -13,6 +13,7 @@ export function haversineKm(lat1, lng1, lat2, lng2) {
 
 export function formatDistance(km) {
   if (km == null || Number.isNaN(km)) return "";
+  if (!Number.isFinite(km)) return "位置未定";
   if (km < 1) return `${Math.round(km * 1000)} m`;
   return `${km.toFixed(1)} km`;
 }

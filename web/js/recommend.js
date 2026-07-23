@@ -25,6 +25,7 @@ export function similarityScore(candidate, allPlaces, likedIds) {
 /**
  * Nearby results: KOL places + preference-origin places that match likes.
  * Preference suggestions are marked with reason "like_preference".
+ * When cityFilter is set (All in area), includes places without lat/lng.
  */
 export function rankNearby(places, { lat, lng, radiusKm, cityFilter, haversineKm }) {
   const likedIds = getLikes();
@@ -33,19 +34,28 @@ export function rankNearby(places, { lat, lng, radiusKm, cityFilter, haversineKm
 
   for (const place of places) {
     const loc = place.location || {};
-    if (loc.lat == null || loc.lng == null) continue;
-    const distanceKm = haversineKm(lat, lng, loc.lat, loc.lng);
+    const hasCoords = loc.lat != null && loc.lng != null;
+    const placeCity = (loc.city || "").toLowerCase();
+
     if (cityKey) {
-      const placeCity = (loc.city || "").toLowerCase();
       if (placeCity !== cityKey) continue;
-    } else if (distanceKm > radiusKm) {
+    } else if (!hasCoords) {
       continue;
+    }
+
+    let distanceKm;
+    let ungeocoded = false;
+    if (hasCoords) {
+      distanceKm = haversineKm(lat, lng, loc.lat, loc.lng);
+      if (!cityKey && distanceKm > radiusKm) continue;
+    } else {
+      distanceKm = Infinity;
+      ungeocoded = true;
     }
 
     const origin = place.origin || "kol";
     const sim = similarityScore(place, places, likedIds);
 
-    // Preference-catalog places only show when user has likes and some overlap
     if (origin === "like_preference") {
       if (!likedIds.size || sim < 2) continue;
     }
@@ -53,6 +63,7 @@ export function rankNearby(places, { lat, lng, radiusKm, cityFilter, haversineKm
     withDist.push({
       place,
       distanceKm,
+      ungeocoded,
       suggestionReason:
         origin === "like_preference" ? "like_preference" : "kol",
       similarity: sim,
@@ -62,6 +73,9 @@ export function rankNearby(places, { lat, lng, radiusKm, cityFilter, haversineKm
   withDist.sort((a, b) => {
     if (a.suggestionReason !== b.suggestionReason) {
       return a.suggestionReason === "kol" ? -1 : 1;
+    }
+    if (a.ungeocoded !== b.ungeocoded) {
+      return a.ungeocoded ? 1 : -1;
     }
     return a.distanceKm - b.distanceKm;
   });

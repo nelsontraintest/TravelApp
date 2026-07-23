@@ -11,6 +11,7 @@ import {
   photoHtml,
   quoteHtml,
   actionRow,
+  ungeocodedChip,
 } from "./place-card.js";
 
 const statusEl = document.getElementById("status");
@@ -108,7 +109,7 @@ function render() {
     return;
   }
 
-  ranked.forEach(({ place, distanceKm, suggestionReason }, i) => {
+  ranked.forEach(({ place, distanceKm, suggestionReason, ungeocoded }, i) => {
     const card = document.createElement("article");
     card.className = "place-card";
     card.style.animationDelay = `${i * 40}ms`;
@@ -123,16 +124,21 @@ function render() {
       .map((t) => `<span class="chip">${escapeHtml(t)}</span>`)
       .join("");
 
+    const distLabel = ungeocoded || !Number.isFinite(distanceKm)
+      ? "位置未定"
+      : formatDistance(distanceKm);
+
     card.innerHTML = `
       ${photoHtml(place)}
       <div class="row" style="justify-content:space-between">
         <h3>${escapeHtml(place.name)}</h3>
-        <span class="distance">${formatDistance(distanceKm)}</span>
+        <span class="distance${ungeocoded ? " distance-ungeocoded" : ""}">${escapeHtml(distLabel)}</span>
       </div>
       ${localNameLine(place)}
       <div class="meta">
         <span class="chip">${escapeHtml(place.type)}</span>
         <span class="chip origin-${suggestionReason === "like_preference" ? "like" : "kol"}">${originLabel}</span>
+        ${ungeocodedChip(place)}
         ${tags}
       </div>
       <p class="muted">${escapeHtml(place.description || place.location?.address || "")}</p>

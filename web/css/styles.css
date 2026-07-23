@@ -356,11 +356,22 @@ input[type="number"] {
   border-color: rgba(0, 122, 51, 0.25);
 }
 
+.chip.chip-ungeocoded {
+  background: #f5e6c8;
+  color: #6b4e16;
+  border-color: rgba(140, 100, 30, 0.35);
+}
+
 .distance {
   font-family: var(--font-lcd);
   font-weight: 400;
   color: var(--fuji-green);
   font-size: 0.85rem;
+}
+
+.distance.distance-ungeocoded {
+  color: #6b4e16;
+  font-size: 0.75rem;
 }
 
 .empty {

@@ -106,7 +106,15 @@
             "osm_url": { "type": "string" },
             "maps_url": { "type": "string" },
             "google_place_id": { "type": "string" },
-            "source": { "type": "string", "enum": ["osm", "google_places"] }
+            "geocode_status": {
+              "type": "string",
+              "enum": ["resolved", "missing", "skipped"],
+              "description": "resolved=has lat/lng; missing=geocode failed; skipped=not attempted"
+            },
+            "source": {
+              "type": "string",
+              "enum": ["osm", "google_places", "maps_search"]
+            }
           }
         },
         "person": {

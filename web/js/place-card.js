@@ -30,12 +30,29 @@ export function photoHtml(place) {
 export function mapsLink(place) {
   const enrichment = place.enrichment || {};
   const loc = place.location || {};
-  const url = enrichment.maps_url ||
-    (loc.lat != null && loc.lng != null
-      ? `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`
-      : "");
+  let url = enrichment.maps_url || "";
+  if (!url && loc.lat != null && loc.lng != null) {
+    url = `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`;
+  }
+  if (!url) {
+    const parts = [place.name, loc.area, loc.city].filter(Boolean);
+    if (parts.length) {
+      url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(parts.join(", "))}`;
+    }
+  }
   if (!url) return "";
   return `<a class="action-link action-map" href="${escapeHtml(url)}" target="_blank" rel="noopener">地圖</a>`;
+}
+
+export function isUngeocoded(place) {
+  const loc = place.location || {};
+  const status = (place.enrichment || {}).geocode_status;
+  return loc.lat == null || loc.lng == null || status === "missing";
+}
+
+export function ungeocodedChip(place) {
+  if (!isUngeocoded(place)) return "";
+  return `<span class="chip chip-ungeocoded">位置未定</span>`;
 }
 
 /** Build a YouTube URL, optionally jumping to timestamp_sec. */
