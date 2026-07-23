@@ -28,20 +28,39 @@ export function photoHtml(place) {
 }
 
 export function mapsLink(place) {
-  const enrichment = place.enrichment || {};
   const loc = place.location || {};
-  let url = enrichment.maps_url || "";
-  if (!url && loc.lat != null && loc.lng != null) {
-    url = `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`;
-  }
-  if (!url) {
-    const parts = [place.name, loc.area, loc.city].filter(Boolean);
-    if (parts.length) {
-      url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(parts.join(", "))}`;
-    }
-  }
+  if (loc.lat == null || loc.lng == null) return "";
+  const enrichment = place.enrichment || {};
+  const url =
+    enrichment.maps_url ||
+    `https://www.google.com/maps/search/?api=1&query=${loc.lat},${loc.lng}`;
   if (!url) return "";
   return `<a class="action-link action-map" href="${escapeHtml(url)}" target="_blank" rel="noopener">地圖</a>`;
+}
+
+/** Google Search in Safari when there is no map pin. */
+export function googleSearchQuery(place) {
+  const loc = place.location || {};
+  const names = place.names || {};
+  const primary =
+    place.name ||
+    names.primary ||
+    names.ja ||
+    names.en ||
+    names["zh-Hant"] ||
+    "";
+  const parts = [primary, loc.area, loc.city].filter(Boolean);
+  return parts.join(" ").trim();
+}
+
+export function googleSearchLink(place) {
+  const loc = place.location || {};
+  // Only when there is no real pin
+  if (loc.lat != null && loc.lng != null) return "";
+  const q = googleSearchQuery(place);
+  if (!q) return "";
+  const url = `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+  return `<a class="action-link action-search" href="${escapeHtml(url)}" target="_blank" rel="noopener" title="${escapeHtml(q)}">搜尋</a>`;
 }
 
 export function isUngeocoded(place) {
@@ -102,10 +121,11 @@ export function quoteHtml(place) {
 
 export function actionRow(place) {
   const map = mapsLink(place);
+  const search = googleSearchLink(place);
   const youtube = youtubeLink(place);
   const contact = contactHtml(place);
-  if (!map && !youtube && !contact) return "";
-  return `<div class="action-row">${map}${youtube}${contact}</div>`;
+  if (!map && !search && !youtube && !contact) return "";
+  return `<div class="action-row">${map}${search}${youtube}${contact}</div>`;
 }
 
 export function addressLine(place) {

@@ -555,6 +555,12 @@ input[type="number"] {
   border-color: var(--fuji-green-dark);
 }
 
+.action-search {
+  background: #e8eef5;
+  color: #2a3a4a;
+  border-color: #b8c4d0;
+}
+
 .action-phone {
   background: var(--lcd-bg);
 }
