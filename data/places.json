@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-23T02:52:56Z",
+  "updated_at": "2026-07-23T03:35:31Z",
   "kols": [
     {
       "id": "maibaru_travel",
@@ -198,9 +198,9 @@
         "quote": "充满冬日静谧的民宿「Lavender」"
       },
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 43.3644451,
+        "lng": 142.3559067,
+        "address": "ラベンダー大橋, 国道38号, 島ノ下, 富良野市, 上川総合振興局, 北海道, 北海道地方, 076-0034, 日本",
         "city": "Furano",
         "country": "JP",
         "area": "Furano"
@@ -212,12 +212,20 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "source": "osm"
+        "source": "osm",
+        "osm_url": "https://www.openstreetmap.org/way/598421265",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.3644451,142.3559067",
+        "geocode_status": "resolved"
       },
       "confidence": 0.75,
       "needs_review": true,
       "origin": "kol",
-      "id": "furano_kyoto_maru_pension_lavender"
+      "id": "furano_kyoto_maru_pension_lavender",
+      "names": {
+        "ja": "ラベンダー大橋",
+        "en": "Rabenda Bridge",
+        "primary": "ラベンダー大橋"
+      }
     },
     {
       "type": "shop",
@@ -446,9 +454,9 @@
         "quote": "Hello 各位小薯茄 今天我們來到粉嶺"
       },
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 22.3735484,
+        "lng": 113.9317426,
+        "address": "小冷水具特殊科學價值地點 Siu Lang Shui SSSI, 小冷水 Siu Lang Shui, 屯門區 Tuen Mun District, 新界 New Territories, 香港 Hong Kong, 中国",
         "city": "Hong Kong",
         "country": "HK",
         "area": ""
@@ -460,7 +468,10 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": ""
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=22.3735484,113.9317426",
+        "osm_url": "https://www.openstreetmap.org/way/612008190",
+        "source": "osm",
+        "geocode_status": "resolved"
       },
       "person": {
         "role": "KOL / YouTube hosts",
@@ -1636,8 +1647,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Shinji%20Ohmaki%2C%20Central%2C%20Hong%20Kong",
+        "source": "maps_search",
+        "geocode_status": "missing"
       },
       "needs_review": true,
       "origin": "kol",
@@ -2063,22 +2075,24 @@
         "quote": "位于白川清澄的这家蓝瓶咖啡是日本第一家分店。"
       },
       "location": {
-        "lat": null,
-        "lng": null,
-        "address": "",
+        "lat": 35.6777665,
+        "lng": 139.800579,
+        "address": "Blue Bottle Coffee, 8, 平野一丁目, 平野, 江東区, 東京都, 135-0023, 日本",
         "city": "Tokyo",
         "country": "JP",
         "area": "Kiyosumi-Shirakawa"
       },
       "contact": {
         "phone": "",
-        "website": ""
+        "website": "https://bluebottlecoffee.jp/"
       },
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=35.6777665,139.800579",
+        "source": "osm",
+        "geocode_status": "resolved",
+        "osm_url": "https://www.openstreetmap.org/way/606993803"
       },
       "confidence": 0.98,
       "needs_review": false,
@@ -2188,8 +2202,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=J%C3%BCrgen%20Lehl%2C%20Kiyosumi-Shirakawa%2C%20Tokyo",
+        "source": "maps_search",
+        "geocode_status": "missing"
       },
       "confidence": 0.95,
       "needs_review": false,
@@ -2243,8 +2258,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Jane%20Muir%2C%20Kiyosumi-Shirakawa%2C%20Tokyo",
+        "source": "maps_search",
+        "geocode_status": "missing"
       },
       "confidence": 0.9,
       "needs_review": false,
@@ -2294,8 +2310,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Hender%20Scheme%20hanging%20basket%2C%20Kiyosumi-Shirakawa%2C%20Tokyo",
+        "source": "maps_search",
+        "geocode_status": "missing"
       },
       "confidence": 0.85,
       "needs_review": true,
@@ -2346,8 +2363,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Custom%20Aalto%20table%2C%20Kiyosumi-Shirakawa%2C%20Tokyo",
+        "source": "maps_search",
+        "geocode_status": "missing"
       },
       "confidence": 0.8,
       "needs_review": true,
@@ -2397,8 +2415,9 @@
       "enrichment": {
         "rating": null,
         "photos": [],
-        "maps_url": "",
-        "source": "osm"
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Babaghuri%20chair%2C%20Kiyosumi-Shirakawa%2C%20Tokyo",
+        "source": "maps_search",
+        "geocode_status": "missing"
       },
       "confidence": 0.9,
       "needs_review": false,
