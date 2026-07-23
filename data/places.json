@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-22T10:21:36Z",
+  "updated_at": "2026-07-23T02:52:56Z",
   "kols": [
     {
       "id": "maibaru_travel",
@@ -61,6 +61,16 @@
       "country": "HK",
       "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=22.2917&lng=114.1627",
       "source_youtube_url": "https://youtu.be/dk2CNIwE1j0"
+    },
+    {
+      "id": "tokyo",
+      "label": "Tokyo, Kiyosumi-Shirakawa",
+      "lat": 35.6804,
+      "lng": 139.7978,
+      "city": "Tokyo",
+      "country": "JP",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=35.6804&lng=139.7978",
+      "source_youtube_url": "https://youtu.be/yWZmKAw_Bcc"
     }
   ],
   "places": [
@@ -1969,6 +1979,430 @@
       },
       "confidence": 0.9,
       "id": "hong_kong_hong_kong_tramways"
+    },
+    {
+      "id": "tokyo_kiyosumi_shirakawa",
+      "type": "street",
+      "name": "Kiyosumi-Shirakawa",
+      "names": {
+        "primary": "清澄白河",
+        "en": "Kiyosumi-Shirakawa",
+        "ja": "清澄白河",
+        "zh-Hant": "清澄白河"
+      },
+      "aliases": [
+        "白川清澄",
+        "清澄白河",
+        "Kiyosumi Shirakawa"
+      ],
+      "description": "Quiet warehouse-turned-creative neighborhood in Koto; starting area for this Tokyo inspiration walk.",
+      "tags": [
+        "tokyo",
+        "kiyosumi-shirakawa",
+        "neighborhood",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 30,
+        "quote": "今天我们将漫步于白川清澄附近。"
+      },
+      "location": {
+        "lat": 35.6820504,
+        "lng": 139.7987644,
+        "address": "清澄白河, 清洲橋通り, 清澄三丁目, 清澄, 江東区, 東京都, 135-0024, 日本",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=35.6820504,139.7987644",
+        "osm_url": "https://www.openstreetmap.org/node/5594511144",
+        "source": "osm"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "tokyo_blue_bottle_kiyosumi",
+      "type": "cafe",
+      "name": "Blue Bottle Coffee Kiyosumi-Shirakawa",
+      "names": {
+        "primary": "ブルーボトルコーヒー 清澄白河",
+        "en": "Blue Bottle Coffee Kiyosumi-Shirakawa",
+        "ja": "ブルーボトルコーヒー 清澄白河フラッグシップカフェ",
+        "zh-Hant": "藍瓶咖啡 清澄白河"
+      },
+      "aliases": [
+        "Blue Bottle Kiyosumi",
+        "ブルーボトルコーヒー清澄白河",
+        "蓝瓶咖啡清澄白河"
+      ],
+      "description": "Japan's first Blue Bottle Coffee, in a former warehouse in Kiyosumi-Shirakawa; waffle stop in the vlog.",
+      "tags": [
+        "tokyo",
+        "kiyosumi-shirakawa",
+        "cafe",
+        "coffee",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 944,
+        "quote": "位于白川清澄的这家蓝瓶咖啡是日本第一家分店。"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "confidence": 0.98,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "tokyo_babaghuri",
+      "type": "shop",
+      "name": "Babaghuri",
+      "names": {
+        "primary": "ババグーリ",
+        "en": "Babaghuri",
+        "ja": "ババグーリ",
+        "zh-Hant": "Babaghuri"
+      },
+      "aliases": [
+        "Jürgen Lehl Babaghuri",
+        "尤尔根·莱尔",
+        "ババグーリ"
+      ],
+      "description": "Nature-inspired lifestyle shop by designer Jürgen Lehl; handcrafted everyday goods and the Babaghuri chair.",
+      "tags": [
+        "tokyo",
+        "kiyosumi-shirakawa",
+        "shop",
+        "design",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 1106,
+        "quote": "一家与自然和谐共存的商店，由设计师尤尔根·莱尔设计"
+      },
+      "location": {
+        "lat": 35.6788251,
+        "lng": 139.7968272,
+        "address": "ババグーリ清澄本店 Babaghuri Kiyosumi Main Shop, 7, 清澄三丁目, 清澄, 江東区, 東京都, 135-0024, 日本",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "+81-3-3820-8825",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=35.6788251,139.7968272",
+        "osm_url": "https://www.openstreetmap.org/node/13976516245",
+        "source": "osm"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "person_jurgen_lehl",
+      "type": "person",
+      "name": "Jürgen Lehl",
+      "names": {
+        "primary": "ユルゲン・レール",
+        "en": "Jürgen Lehl",
+        "ja": "ユルゲン・レール",
+        "zh-Hant": "尤爾根·萊爾"
+      },
+      "aliases": [
+        "尤尔根·莱尔",
+        "Jurgen Lehl",
+        "ユルゲン・レール"
+      ],
+      "description": "Designer behind Babaghuri; known for nature-harmonious everyday objects.",
+      "tags": [
+        "designer",
+        "babaghuri",
+        "tokyo",
+        "japan"
+      ],
+      "person": {
+        "role": "designer",
+        "bio": "Designer of Babaghuri; featured while visiting the nature-inspired shop.",
+        "related_places": [
+          "tokyo_babaghuri"
+        ]
+      },
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 1106,
+        "quote": "一家与自然和谐共存的商店，由设计师尤尔根·莱尔设计"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "person_jane_muir",
+      "type": "person",
+      "name": "Jane Muir",
+      "names": {
+        "primary": "Jane Muir",
+        "en": "Jane Muir",
+        "ja": "ジェーン・ミュア",
+        "zh-Hant": "簡·繆爾"
+      },
+      "aliases": [
+        "简·缪尔",
+        "ジェーン・ミュア"
+      ],
+      "description": "London-based ceramic artist whose work Junosan found and long wanted to see.",
+      "tags": [
+        "ceramic",
+        "artist",
+        "london",
+        "tokyo"
+      ],
+      "person": {
+        "role": "ceramic artist",
+        "bio": "Ceramic artist from London; works spotted during the Kiyosumi-Shirakawa walk.",
+        "related_places": []
+      },
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 372,
+        "quote": "我发现了一本我多年来一直很感兴趣的简·缪尔的作品。我是一名来自伦敦的陶瓷艺术家。"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "product_hender_scheme_hanging_basket",
+      "type": "product",
+      "name": "Hender Scheme hanging basket",
+      "names": {
+        "primary": "Hender Scheme 吊籃",
+        "en": "Hender Scheme hanging basket",
+        "ja": "Hender Scheme ハンギングバスケット",
+        "zh-Hant": "Hender Scheme 吊籃"
+      },
+      "aliases": [
+        "Hender Scheme",
+        "エンダースキーマ"
+      ],
+      "description": "Hender Scheme hanging basket spotted at a Nordic furniture shop on the walk.",
+      "tags": [
+        "product",
+        "hender-scheme",
+        "furniture",
+        "tokyo",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 686,
+        "quote": "Hender Scheme 的这款吊篮也很可爱。"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "confidence": 0.85,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "product_aalto_table_custom",
+      "type": "product",
+      "name": "Custom Aalto table",
+      "names": {
+        "primary": "アルトテーブル",
+        "en": "Custom Aalto table",
+        "ja": "アルトテーブル",
+        "zh-Hant": "阿爾托桌"
+      },
+      "aliases": [
+        "Alvar Aalto table",
+        "阿尔托桌",
+        "アルトテーブル"
+      ],
+      "description": "Shop-customized Alvar Aalto table; Junosan's favorite piece at the Nordic furniture store.",
+      "tags": [
+        "product",
+        "aalto",
+        "furniture",
+        "tokyo",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 698,
+        "quote": "我最喜欢的是这家店定制的阿尔托桌。"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "confidence": 0.8,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "product_babaghuri_chair",
+      "type": "product",
+      "name": "Babaghuri chair",
+      "names": {
+        "primary": "ババグーリチェア",
+        "en": "Babaghuri chair",
+        "ja": "ババグーリチェア",
+        "zh-Hant": "Babaghuri 椅"
+      },
+      "aliases": [
+        "巴巴古里椅",
+        "ババグーリチェア"
+      ],
+      "description": "Babaghuri chair highlighted as embodying natural beauty in the Jürgen Lehl shop.",
+      "tags": [
+        "product",
+        "babaghuri",
+        "furniture",
+        "tokyo",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/yWZmKAw_Bcc",
+        "youtube_title": "Tokyo Vlog | 清澄白河でインスピレーションを見つける日✍️カフェ、アート、インテリア",
+        "kol_id": "junosan_tokyo",
+        "timestamp_sec": 1120,
+        "quote": "巴巴古里椅体现了自然之美"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Tokyo",
+        "country": "JP",
+        "area": "Kiyosumi-Shirakawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "",
+        "source": "osm"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol"
     }
   ]
 }
