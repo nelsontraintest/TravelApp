@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-24T16:06:10Z",
+  "updated_at": "2026-07-24T16:14:37Z",
   "kols": [
     {
       "id": "maibaru_travel",
@@ -101,6 +101,26 @@
       "country": "JP",
       "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.7602&lng=142.3977",
       "source_youtube_url": "https://youtu.be/bkFao4_YPNk"
+    },
+    {
+      "id": "otaru",
+      "label": "Otaru, Hokkaido",
+      "lat": 43.19,
+      "lng": 141.0113,
+      "city": "Otaru",
+      "country": "JP",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.1900&lng=141.0113",
+      "source_youtube_url": "https://youtu.be/YuiWoRPBu8A"
+    },
+    {
+      "id": "hakodate",
+      "label": "Hakodate, Hokkaido",
+      "lat": 41.7667,
+      "lng": 140.7161,
+      "city": "Hakodate",
+      "country": "JP",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=41.7667&lng=140.7161",
+      "source_youtube_url": "https://youtu.be/YuiWoRPBu8A"
     }
   ],
   "places": [
@@ -4038,6 +4058,277 @@
       "needs_review": false,
       "origin": "kol",
       "id": "unknown_yuko_araki"
+    },
+    {
+      "type": "restaurant",
+      "name": "Yoichiya Otaru Canal",
+      "names": {
+        "primary": "世壱屋 小樽運河店",
+        "en": "Yoichiya Otaru Canal",
+        "ja": "世壱屋 小樽運河店",
+        "zh-Hant": "世壱屋 小樽運河店"
+      },
+      "aliases": [
+        "世壱屋",
+        "世壱屋 小樽运河店",
+        "Yoichiya",
+        "Yoichi-ya"
+      ],
+      "description": "Popular uni specialty restaurant in Otaru Sakaimachi; famous for five-uni tasting donburi, tuna from Yamako, and crab miso soup. Opened 2007; HQ in Yoichi with branches in Sapporo and Hakodate.",
+      "tags": [
+        "otaru",
+        "hokkaido",
+        "uni",
+        "seafood",
+        "donburi",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/YuiWoRPBu8A",
+        "youtube_title": "Japanese Noodles Udon Soba Hokkaido — Yoichiya Otaru Canal uni specialty",
+        "kol_id": "japanese_noodles_udon_soba_hokkaido",
+        "timestamp_sec": 56,
+        "quote": "海胆专门店世壱屋 小樽运河店"
+      },
+      "location": {
+        "lat": 43.200108,
+        "lng": 141.0039425,
+        "address": "動物検疫所北海道・東北支所小樽港事務所, 2, 港町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0007, 日本",
+        "city": "Otaru",
+        "country": "JP",
+        "area": "Sakaimachi"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.200108,141.0039425",
+        "osm_url": "https://www.openstreetmap.org/node/6229392847",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "otaru_yoichiya_otaru_canal"
+    },
+    {
+      "type": "attraction",
+      "name": "Otaru Music Box Museum",
+      "names": {
+        "primary": "小樽オルゴール堂",
+        "en": "Otaru Music Box Museum",
+        "ja": "小樽オルゴール堂",
+        "zh-Hant": "小樽八音盒堂"
+      },
+      "aliases": [
+        "小樽八音盒堂",
+        "Otaru Orgel-do"
+      ],
+      "description": "Music box museum and shop about a five-minute walk from Yoichiya Otaru Canal, recommended to guests exploring the canal area.",
+      "tags": [
+        "otaru",
+        "hokkaido",
+        "museum",
+        "shop",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/YuiWoRPBu8A",
+        "youtube_title": "Japanese Noodles Udon Soba Hokkaido — Yoichiya Otaru Canal uni specialty",
+        "kol_id": "japanese_noodles_udon_soba_hokkaido",
+        "timestamp_sec": 2010,
+        "quote": "小樽八音盒堂，从世壱屋步行约5分钟"
+      },
+      "location": {
+        "lat": 43.1911335,
+        "lng": 141.0068327,
+        "address": "小樽オルゴール堂 2号館 アンティーク ミュージアム, 堺町通り, 色内一丁目, 東雲町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0027, 日本",
+        "city": "Otaru",
+        "country": "JP",
+        "area": "Sakaimachi"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.1911335,141.0068327",
+        "osm_url": "https://www.openstreetmap.org/way/525960324",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.85,
+      "needs_review": true,
+      "origin": "kol",
+      "id": "otaru_otaru_music_box_museum"
+    },
+    {
+      "type": "restaurant",
+      "name": "Lucky Pierrot",
+      "names": {
+        "primary": "ラッキーピエロ",
+        "en": "Lucky Pierrot",
+        "ja": "ラッキーピエロ",
+        "zh-Hant": "Lucky Pierrot"
+      },
+      "aliases": [
+        "Lucky Pierrot Hakodate"
+      ],
+      "description": "Famous Hakodate burger chain; staff brought Lucky Pierrot back from a Hakodate trip as a treat for the Yoichiya team.",
+      "tags": [
+        "hakodate",
+        "hokkaido",
+        "burger",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/YuiWoRPBu8A",
+        "youtube_title": "Japanese Noodles Udon Soba Hokkaido — Yoichiya Otaru Canal uni specialty",
+        "kol_id": "japanese_noodles_udon_soba_hokkaido",
+        "timestamp_sec": 420,
+        "quote": "这个在函馆很有名哦，在北海道很有名的，这是Lucky Pierrot"
+      },
+      "location": {
+        "lat": 41.7667479,
+        "lng": 140.7160517,
+        "address": "ラッキーピエロマリーナ末広店, 17, 末広町, 函館市, 渡島総合振興局, 北海道, 北海道地方, 040-0053, 日本",
+        "city": "Hakodate",
+        "country": "JP",
+        "area": ""
+      },
+      "contact": {
+        "phone": "+81 138 27 5000",
+        "website": "http://www.luckypierrot.jp/"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=41.7667479,140.7160517",
+        "osm_url": "https://www.openstreetmap.org/node/4158465138",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.7,
+      "needs_review": true,
+      "origin": "kol",
+      "id": "hakodate_lucky_pierrot"
+    },
+    {
+      "type": "person",
+      "name": "Machiko Kondo",
+      "names": {
+        "primary": "近藤真千子",
+        "en": "Machiko Kondo",
+        "ja": "近藤真千子",
+        "zh-Hant": "近藤真千子"
+      },
+      "aliases": [
+        "真千子",
+        "真子",
+        "招牌老板娘"
+      ],
+      "description": "Signature proprietress (看板ママ) of Yoichiya Otaru Canal; energetic host known for welcoming guests and making staff meals.",
+      "tags": [
+        "otaru",
+        "hokkaido",
+        "chef",
+        "host",
+        "japan"
+      ],
+      "person": {
+        "role": "proprietress",
+        "bio": "看板老板娘 of 世壱屋 小樽運河店; formerly ran an izakaya called 微胖 before marriage.",
+        "related_places": [
+          "Yoichiya Otaru Canal"
+        ]
+      },
+      "source": {
+        "youtube_url": "https://youtu.be/YuiWoRPBu8A",
+        "youtube_title": "Japanese Noodles Udon Soba Hokkaido — Yoichiya Otaru Canal uni specialty",
+        "kol_id": "japanese_noodles_udon_soba_hokkaido",
+        "timestamp_sec": 79,
+        "quote": "招牌老板娘 近藤真千子女士"
+      },
+      "location": {
+        "lat": 43.1787637,
+        "lng": 141.0230346,
+        "address": "小樽IC, 札樽自動車道, 若竹町, 小樽市, 後志総合振興局, 北海道, 北海道地方, 047-0001, 日本",
+        "city": "Otaru",
+        "country": "JP",
+        "area": "Sakaimachi"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.1787637,141.0230346",
+        "osm_url": "https://www.openstreetmap.org/node/874672095",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "otaru_machiko_kondo"
+    },
+    {
+      "type": "shop",
+      "name": "Yamako",
+      "names": {
+        "primary": "山幸",
+        "en": "Yamako",
+        "ja": "山幸",
+        "zh-Hant": "山幸"
+      },
+      "aliases": [
+        "山幸のネギトロ"
+      ],
+      "description": "Top-tier tuna wholesaler supplying Yoichiya; source of their acclaimed otoro, chutoro, akami, and negitoro.",
+      "tags": [
+        "tuna",
+        "wholesaler",
+        "japan",
+        "seafood"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/YuiWoRPBu8A",
+        "youtube_title": "Japanese Noodles Udon Soba Hokkaido — Yoichiya Otaru Canal uni specialty",
+        "kol_id": "japanese_noodles_udon_soba_hokkaido",
+        "timestamp_sec": 1045,
+        "quote": "从日本第一的金枪鱼批发商「山幸」进货的金枪鱼"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "",
+        "country": "JP",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Yamako",
+        "geocode_status": "missing",
+        "source": "maps_search"
+      },
+      "confidence": 0.55,
+      "needs_review": true,
+      "origin": "kol",
+      "id": "unknown_yamako"
     }
   ]
 }
