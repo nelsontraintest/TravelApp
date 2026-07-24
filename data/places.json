@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-23T03:35:31Z",
+  "updated_at": "2026-07-24T16:00:54Z",
   "kols": [
     {
       "id": "maibaru_travel",
@@ -25,22 +25,22 @@
     {
       "id": "furano",
       "label": "Furano, Hokkaido",
-      "lat": 43.3447,
-      "lng": 142.3789,
+      "lat": 43.3332,
+      "lng": 142.3695,
       "city": "Furano",
       "country": "JP",
-      "source_youtube_url": "https://youtu.be/6fL9aDhAlzs",
-      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.3447&lng=142.3789"
+      "source_youtube_url": "https://youtu.be/bkFao4_YPNk",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.3332&lng=142.3695"
     },
     {
       "id": "biei",
       "label": "Biei, Hokkaido",
-      "lat": 43.484,
-      "lng": 142.627,
+      "lat": 43.4935,
+      "lng": 142.6141,
       "city": "Biei",
       "country": "JP",
-      "source_youtube_url": "https://youtu.be/6fL9aDhAlzs",
-      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.4840&lng=142.6270"
+      "source_youtube_url": "https://youtu.be/bkFao4_YPNk",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.4935&lng=142.6141"
     },
     {
       "id": "fanling",
@@ -71,6 +71,36 @@
       "country": "JP",
       "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=35.6804&lng=139.7978",
       "source_youtube_url": "https://youtu.be/yWZmKAw_Bcc"
+    },
+    {
+      "id": "chitose",
+      "label": "Chitose, Hokkaido",
+      "lat": 42.7868,
+      "lng": 141.683,
+      "city": "Chitose",
+      "country": "JP",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=42.7868&lng=141.6830",
+      "source_youtube_url": "https://youtu.be/bkFao4_YPNk"
+    },
+    {
+      "id": "sapporo",
+      "label": "Sapporo, Hokkaido",
+      "lat": 43.065,
+      "lng": 141.3366,
+      "city": "Sapporo",
+      "country": "JP",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.0650&lng=141.3366",
+      "source_youtube_url": "https://youtu.be/bkFao4_YPNk"
+    },
+    {
+      "id": "asahikawa",
+      "label": "Asahikawa, Hokkaido",
+      "lat": 43.7602,
+      "lng": 142.3977,
+      "city": "Asahikawa",
+      "country": "JP",
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.7602&lng=142.3977",
+      "source_youtube_url": "https://youtu.be/bkFao4_YPNk"
     }
   ],
   "places": [
@@ -274,34 +304,35 @@
       "id": "furano_furano_delice"
     },
     {
-      "type": "attraction",
+      "type": "shop",
       "name": "Ningle Terrace",
       "aliases": [
         "ニングルテラス",
         "手作小店聚落"
       ],
-      "description": "Log-cabin craft shop village in the Furano forest, fairy-tale winter atmosphere.",
+      "description": "Forest craft village of about 15 log houses on the New Furano Prince Hotel grounds.",
       "tags": [
         "furano",
         "shopping",
         "craft",
         "hokkaido",
-        "japan"
+        "japan",
+        "shop"
       ],
       "source": {
-        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
-        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
-        "kol_id": "maibaru_travel",
-        "timestamp_sec": 512,
-        "quote": "我到了手作小店聚落「Ningle Terrace」 好可爱♥"
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 2117,
+        "quote": "新富良野プリンスホテル敷地内にあるニングルテラスへ！"
       },
       "location": {
         "lat": 43.3234308,
         "lng": 142.3563389,
-        "address": "中御料, 富良野市, 北海道 076-0013",
+        "address": "ニングルテラス, 御料基線, 中御料, 富良野市, 上川総合振興局, 北海道, 北海道地方, 076-0013, 日本",
         "city": "Furano",
         "country": "JP",
-        "area": "Furano"
+        "area": "New Furano Prince Hotel"
       },
       "contact": {
         "phone": "",
@@ -312,16 +343,18 @@
         "photos": [],
         "osm_url": "https://www.openstreetmap.org/node/4607790389",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=43.3234308,142.3563389",
-        "source": "osm"
+        "source": "osm",
+        "geocode_status": "resolved"
       },
       "confidence": 0.95,
       "needs_review": false,
       "origin": "kol",
       "id": "furano_ningle_terrace",
       "names": {
-        "ja": "ニングルテラス",
+        "primary": "ニングルテラス",
         "en": "Ningle Terrace",
-        "primary": "ニングルテラス"
+        "ja": "ニングルテラス",
+        "zh-Hant": "寧格露露台"
       }
     },
     {
@@ -330,27 +363,30 @@
       "aliases": [
         "青い池",
         "青池",
-        "白池"
+        "白池",
+        "AOI IKE",
+        "Biei Blue Pond"
       ],
-      "description": "Famous Biei pond; stunning even frozen in winter (KOL calls it 白池 in snow season).",
+      "description": "Famous Biei pond formed by disaster-prevention works; ethereal blue water and dead larch trees.",
       "tags": [
         "biei",
         "nature",
         "pond",
         "hokkaido",
-        "japan"
+        "japan",
+        "attraction"
       ],
       "source": {
-        "youtube_url": "https://youtu.be/6fL9aDhAlzs",
-        "youtube_title": "北海道 冬日铁道之旅 — Maibaru Travel",
-        "kol_id": "maibaru_travel",
-        "timestamp_sec": 1211,
-        "quote": "这个季节是「白池」"
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 2628,
+        "quote": "防災工事で水が溜まり偶然生まれた青い池。"
       },
       "location": {
         "lat": 43.4934902,
         "lng": 142.6140976,
-        "address": "美瑛町, 北海道",
+        "address": "青い池, 美瑛町, 上川郡(石狩国), 上川総合振興局, 北海道, 北海道地方, 日本",
         "city": "Biei",
         "country": "JP",
         "area": "Biei"
@@ -364,16 +400,18 @@
         "photos": [],
         "osm_url": "https://www.openstreetmap.org/way/303771940",
         "maps_url": "https://www.google.com/maps/search/?api=1&query=43.4934902,142.6140976",
-        "source": "osm"
+        "source": "osm",
+        "geocode_status": "resolved"
       },
-      "confidence": 0.95,
+      "confidence": 0.98,
       "needs_review": false,
       "origin": "kol",
-      "id": "biei_blue_pond_aoiike",
+      "id": "biei_blue_pond",
       "names": {
-        "ja": "青い池",
+        "primary": "青い池",
         "en": "Blue Pond",
-        "primary": "青い池"
+        "ja": "青い池",
+        "zh-Hant": "青池"
       }
     },
     {
@@ -2421,6 +2459,1102 @@
       },
       "confidence": 0.9,
       "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "chitose_new_chitose_airport",
+      "type": "attraction",
+      "name": "New Chitose Airport",
+      "names": {
+        "primary": "新千歳空港",
+        "en": "New Chitose Airport",
+        "ja": "新千歳空港",
+        "zh-Hant": "新千歲機場"
+      },
+      "aliases": [
+        "新千歳空港",
+        "CTS"
+      ],
+      "description": "Arrival and departure hub for this Hokkaido trip; first gourmet stops and souvenir shopping.",
+      "tags": [
+        "hokkaido",
+        "chitose",
+        "airport",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 131,
+        "quote": "あっという間に新千歳空港へ到着です。"
+      },
+      "location": {
+        "lat": 42.786787,
+        "lng": 141.6829598,
+        "address": "新千歳空港, 道央圏連絡道路, 千歳市, 石狩振興局, 北海道, 北海道地方, 066-0012, 日本",
+        "city": "Chitose",
+        "country": "JP",
+        "area": "New Chitose Airport"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=42.786787,141.6829598",
+        "osm_url": "https://www.openstreetmap.org/way/57007929",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.98,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "product_snows_chitose",
+      "type": "product",
+      "name": "SNOWS",
+      "names": {
+        "primary": "SNOWS",
+        "en": "SNOWS",
+        "ja": "SNOWS",
+        "zh-Hant": "SNOWS"
+      },
+      "aliases": [
+        "スノーズ",
+        "冬季限定北海道スイーツSNOWS"
+      ],
+      "description": "Winter-limited Hokkaido sweets sold at New Chitose Airport; long queues even in the morning.",
+      "tags": [
+        "hokkaido",
+        "chitose",
+        "sweets",
+        "souvenir",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 166,
+        "quote": "冬季限定の北海道スイーツSNOWSを買うこと❄️"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Chitose",
+        "country": "JP",
+        "area": "New Chitose Airport"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=SNOWS%2C%20New%20Chitose%20Airport%2C%20Chitose",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "chitose_ramen_dojo",
+      "type": "mall",
+      "name": "Ramen Dojo New Chitose Airport",
+      "names": {
+        "primary": "ラーメン道場",
+        "en": "Ramen Dojo",
+        "ja": "ラーメン道場",
+        "zh-Hant": "拉麵道場"
+      },
+      "aliases": [
+        "ラーメン道場",
+        "新千歳空港ラーメン道場"
+      ],
+      "description": "3F food court at New Chitose with about 10 ramen shops; first meal of the trip.",
+      "tags": [
+        "hokkaido",
+        "chitose",
+        "ramen",
+        "airport",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 222,
+        "quote": "3階にあるラーメン道場へやって来ました！"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Chitose",
+        "country": "JP",
+        "area": "New Chitose Airport"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Ramen%20Dojo%20New%20Chitose%20Airport%2C%20New%20Chitose%20Airport%2C%20Chitose",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.95,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "chitose_teshikaga_ramen",
+      "type": "restaurant",
+      "name": "Teshikaga Ramen",
+      "names": {
+        "primary": "弟子屈ラーメン",
+        "en": "Teshikaga Ramen",
+        "ja": "弟子屈ラーメン",
+        "zh-Hant": "弟子屈拉麵"
+      },
+      "aliases": [
+        "弟子屈ラーメン"
+      ],
+      "description": "Ramen shop inside Ramen Dojo; miso ramen described as light and filling with lots of toppings.",
+      "tags": [
+        "hokkaido",
+        "chitose",
+        "ramen",
+        "miso",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 247,
+        "quote": "弟子屈ラーメンに入ってみました♪ 念願の味噌ラーメン‥✨"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Chitose",
+        "country": "JP",
+        "area": "New Chitose Airport"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Teshikaga%20Ramen%2C%20New%20Chitose%20Airport%2C%20Chitose",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.95,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "sapporo_solaria_nishitetsu_hotel",
+      "type": "hotel",
+      "name": "Solaria Nishitetsu Hotel Sapporo",
+      "names": {
+        "primary": "ソラリア西鉄ホテル札幌",
+        "en": "Solaria Nishitetsu Hotel Sapporo",
+        "ja": "ソラリア西鉄ホテル札幌",
+        "zh-Hant": "Solaria西鐵飯店札幌"
+      },
+      "aliases": [
+        "ソラリア西鉄ホテル札幌"
+      ],
+      "description": "Day-1 hotel about 10 minutes on foot from Sapporo Station; praised for breakfast buffet with unlimited ikura.",
+      "tags": [
+        "hokkaido",
+        "sapporo",
+        "hotel",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 318,
+        "quote": "アクセス良好のソラリア西鉄ホテル札幌へ宿泊です。"
+      },
+      "location": {
+        "lat": 43.0655045,
+        "lng": 141.3485546,
+        "address": "ソラリア西鉄ホテル札幌宿泊客専用大浴場, 2, 北4条西5, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0004, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Sapporo Station"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0655045,141.3485546",
+        "osm_url": "https://www.openstreetmap.org/node/9166321860",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.98,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "sapporo_shiroi_koibito_park",
+      "type": "attraction",
+      "name": "Shiroi Koibito Park",
+      "names": {
+        "primary": "白い恋人パーク",
+        "en": "Shiroi Koibito Park",
+        "ja": "白い恋人パーク",
+        "zh-Hant": "白色戀人公園"
+      },
+      "aliases": [
+        "白い恋人パーク",
+        "白い恋人"
+      ],
+      "description": "Popular sweets theme park near Miyanosawa; British-meets-Hokkaido vibe with paid area, quizzes, and limited souvenirs.",
+      "tags": [
+        "hokkaido",
+        "sapporo",
+        "sweets",
+        "attraction",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 376,
+        "quote": "王道人気観光スポット・白い恋人パーク！"
+      },
+      "location": {
+        "lat": 43.0886903,
+        "lng": 141.2716802,
+        "address": "白い恋人パーク, 36, 宮の沢2条2, 西区, 札幌市, 石狩振興局, 北海道, 北海道地方, 063-0052, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Miyanosawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": "https://www.shiroikoibitopark.jp/"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0886903,141.2716802",
+        "osm_url": "https://www.openstreetmap.org/node/2422507432",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.98,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "sapporo_hokkaido_shiki_marche",
+      "type": "shop",
+      "name": "Hokkaido Shiki Marche",
+      "names": {
+        "primary": "北海道四季マルシェ",
+        "en": "Hokkaido Shiki Marche",
+        "ja": "北海道四季マルシェ",
+        "zh-Hant": "北海道四季市集"
+      },
+      "aliases": [
+        "北海道四季マルシェ",
+        "四季マルシェ"
+      ],
+      "description": "Food select shop of Hokkaido specialties on 1F of Sapporo Stella Place near JR Sapporo Station.",
+      "tags": [
+        "hokkaido",
+        "sapporo",
+        "shop",
+        "food",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 614,
+        "quote": "北海道四季マルシェはJR札幌駅近く、札幌ステラプレイス1階にあります。"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Sapporo Stella Place"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Hokkaido%20Shiki%20Marche%2C%20Sapporo%20Stella%20Place%2C%20Sapporo",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.95,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "product_sapporo_nogakko_cookie",
+      "type": "product",
+      "name": "Sapporo Agricultural School cookie sandwich",
+      "names": {
+        "primary": "札幌農学校クッキーサンド",
+        "en": "Sapporo Agricultural School cookie sandwich",
+        "ja": "札幌農学校の手作りクッキーサンド",
+        "zh-Hant": "札幌農學校餅乾三明治"
+      },
+      "aliases": [
+        "札幌農学校",
+        "クッキーサンド"
+      ],
+      "description": "Handmade cookie sandwich bought at Hokkaido Shiki Marche; crisp and soft with elegant anko and cream.",
+      "tags": [
+        "hokkaido",
+        "sapporo",
+        "sweets",
+        "souvenir",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 647,
+        "quote": "札幌農学校の手作りクッキーサンドが美味しそう‥！！"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Sapporo Stella Place"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Sapporo%20Agricultural%20School%20cookie%20sandwich%2C%20Sapporo%20Stella%20Place%2C%20Sapporo",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.9,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "sapporo_susukino",
+      "type": "street",
+      "name": "Susukino",
+      "names": {
+        "primary": "すすきの",
+        "en": "Susukino",
+        "ja": "すすきの",
+        "zh-Hant": "薄野"
+      },
+      "aliases": [
+        "すすきの",
+        "薄野"
+      ],
+      "description": "Sapporo nightlife and dining district visited for Hachikyo and closing parfait.",
+      "tags": [
+        "hokkaido",
+        "sapporo",
+        "nightlife",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 688,
+        "quote": "続いてはすすきのへ移動します🚃"
+      },
+      "location": {
+        "lat": 43.0553569,
+        "lng": 141.3533461,
+        "address": "すすきの, 札幌駅前通, 南4条西4, 南7条西4, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 064-0807, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Susukino"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0553569,141.3533461",
+        "osm_url": "https://www.openstreetmap.org/node/7656575877",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.98,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "sapporo_hachikyo_bettei_oyaji",
+      "type": "restaurant",
+      "name": "Hachikyo Bettei Oyaji",
+      "names": {
+        "primary": "はちきょう 別邸おやじ",
+        "en": "Hachikyo Bettei Oyaji",
+        "ja": "はちきょう 別邸おやじ",
+        "zh-Hant": "八京 別邸親父"
+      },
+      "aliases": [
+        "はちきょう",
+        "別邸おやじ",
+        "つっこ飯"
+      ],
+      "description": "Reserved Susukino seafood spot famous for tsukko-meshi; also served jaga-butter, zangi, and salmon.",
+      "tags": [
+        "hokkaido",
+        "sapporo",
+        "susukino",
+        "seafood",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 721,
+        "quote": "念願だったはちきょう！別邸おやじを事前予約していました。"
+      },
+      "location": {
+        "lat": 43.0563655,
+        "lng": 141.3539999,
+        "address": "海味 羅臼料理 はちきょう, 都通り, 南3条西3, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0063, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Susukino"
+      },
+      "contact": {
+        "phone": "+81 11-222-8940",
+        "website": "https://hachikyo.com"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0563655,141.3539999",
+        "osm_url": "https://www.openstreetmap.org/node/5603039954",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "sapporo_parfait_coffee_sake_sasaki",
+      "type": "cafe",
+      "name": "Parfait, Coffee, Sake, Sasaki",
+      "names": {
+        "primary": "パフェ、珈琲、酒、佐々木",
+        "en": "Parfait, Coffee, Sake, Sasaki",
+        "ja": "パフェ、珈琲、酒、佐々木",
+        "zh-Hant": "芭菲、咖啡、酒、佐佐木"
+      },
+      "aliases": [
+        "パフェ、珈琲、酒、佐々木",
+        "佐々木",
+        "締めパフェ"
+      ],
+      "description": "Adult parfait bar within walking distance of Hachikyo; beautiful multi-flavor parfait with herbal tea.",
+      "tags": [
+        "hokkaido",
+        "sapporo",
+        "susukino",
+        "parfait",
+        "cafe",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 866,
+        "quote": "はちきょうから徒歩で行ける「パフェ、珈琲、酒、佐々木」へ。"
+      },
+      "location": {
+        "lat": 43.0592097,
+        "lng": 141.3553581,
+        "address": "Parfait, coffee, liquor, Sato, Ninaru Bldg. 1F, 南1条通, 南1条西2, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-8502, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Susukino"
+      },
+      "contact": {
+        "phone": "",
+        "website": "https://pf-sato.com"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0592097,141.3553581",
+        "osm_url": "https://www.openstreetmap.org/node/12135446421",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.98,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "sunagawa_shiro",
+      "type": "shop",
+      "name": "SHIRO Sunagawa",
+      "names": {
+        "primary": "SHIRO 砂川店",
+        "en": "SHIRO Sunagawa",
+        "ja": "SHIRO砂川店",
+        "zh-Hant": "SHIRO砂川店"
+      },
+      "aliases": [
+        "SHIRO",
+        "シロ",
+        "SHIRO砂川店",
+        "みんなの工場"
+      ],
+      "description": "SHIRO Sunagawa store for custom perfume-making (no reservation); also sells limited Fruit Bouquet line and factory viewing.",
+      "tags": [
+        "hokkaido",
+        "sunagawa",
+        "cosmetics",
+        "perfume",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 1218,
+        "quote": "オリジナルの香水作りができるSHIRO砂川店へ！"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Sunagawa",
+        "country": "JP",
+        "area": "Sunagawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=SHIRO%20Sunagawa%2C%20Sunagawa%2C%20Sunagawa",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.98,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "sunagawa_shiro_cafe",
+      "type": "cafe",
+      "name": "SHIRO Cafe Sunagawa",
+      "names": {
+        "primary": "SHIROカフェ",
+        "en": "SHIRO Cafe",
+        "ja": "SHIROカフェ",
+        "zh-Hant": "SHIRO咖啡"
+      },
+      "aliases": [
+        "SHIROカフェ"
+      ],
+      "description": "Cafe at SHIRO Sunagawa using Hokkaido natural ingredients; pudding and rice-vinegar smoothie tried.",
+      "tags": [
+        "hokkaido",
+        "sunagawa",
+        "cafe",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 1361,
+        "quote": "SHIROカフェも利用しました♪"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Sunagawa",
+        "country": "JP",
+        "area": "Sunagawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=SHIRO%20Cafe%20Sunagawa%2C%20Sunagawa%2C%20Sunagawa",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.9,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "asahikawa_omo7",
+      "type": "hotel",
+      "name": "OMO7 Asahikawa",
+      "names": {
+        "primary": "OMO7旭川",
+        "en": "OMO7 Asahikawa",
+        "ja": "OMO7旭川",
+        "zh-Hant": "OMO7旭川"
+      },
+      "aliases": [
+        "OMO7旭川",
+        "OMO7"
+      ],
+      "description": "Central Asahikawa Hoshino Resorts hotel for two nights; wooden lobby, welcome corn tea, baths, and breakfast with wasabi seafood rice.",
+      "tags": [
+        "hokkaido",
+        "asahikawa",
+        "hotel",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 1442,
+        "quote": "今日から2泊するOMO7旭川！"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Asahikawa",
+        "country": "JP",
+        "area": "Asahikawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=OMO7%20Asahikawa%2C%20Asahikawa%2C%20Asahikawa",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.98,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "asahikawa_daikokuya",
+      "type": "restaurant",
+      "name": "Daikokuya Honten",
+      "names": {
+        "primary": "大黒屋 本店",
+        "en": "Daikokuya Honten",
+        "ja": "大黒屋 本店",
+        "zh-Hant": "大黑屋本店"
+      },
+      "aliases": [
+        "大黒屋",
+        "大黒屋本店",
+        "ジンギスカン"
+      ],
+      "description": "Reserved jingisukan restaurant; Tabizaru pilgrimage spot. Fresh lamb grilled by staff with house spices.",
+      "tags": [
+        "hokkaido",
+        "asahikawa",
+        "jingisukan",
+        "bbq",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 1584,
+        "quote": "事前予約していた大黒屋 本店へ！"
+      },
+      "location": {
+        "lat": 43.7694367,
+        "lng": 142.3572822,
+        "address": "大黑屋, 四条通五丁目, 常盤通, 神楽, 旭川市, 上川総合振興局, 北海道, 北海道地方, 070-0037, 日本",
+        "city": "Asahikawa",
+        "country": "JP",
+        "area": "Asahikawa"
+      },
+      "contact": {
+        "phone": "+81 166-25-2424",
+        "website": "https://daikoku-jgs.com/"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.7694367,142.3572822",
+        "osm_url": "https://www.openstreetmap.org/way/306229715",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "asahikawa_seicomart",
+      "type": "shop",
+      "name": "Seicomart",
+      "names": {
+        "primary": "セイコーマート",
+        "en": "Seicomart",
+        "ja": "セイコーマート",
+        "zh-Hant": "Seicomart"
+      },
+      "aliases": [
+        "セイコーマート",
+        "セイコマ"
+      ],
+      "description": "Hokkaido convenience store stop for local sweets, snacks, and ice cream haul.",
+      "tags": [
+        "hokkaido",
+        "asahikawa",
+        "convenience",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 1678,
+        "quote": "念願のセイコーマートにも寄れました！"
+      },
+      "location": {
+        "lat": 43.7679469,
+        "lng": 142.3653145,
+        "address": "セイコーマート, 四条通十丁目, 宮下通, 宮前, 旭川市, 上川総合振興局, 北海道, 北海道地方, 070-0034, 日本",
+        "city": "Asahikawa",
+        "country": "JP",
+        "area": "Asahikawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.7679469,142.3653145",
+        "osm_url": "https://www.openstreetmap.org/way/191393359",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.85,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "furano_farm_tomita",
+      "type": "attraction",
+      "name": "Farm Tomita",
+      "names": {
+        "primary": "ファーム富田",
+        "en": "Farm Tomita",
+        "ja": "ファーム富田",
+        "zh-Hant": "富田農場"
+      },
+      "aliases": [
+        "ファーム富田",
+        "Farm Tomita"
+      ],
+      "description": "Famous lavender farm in Furano; early-season greenhouse lavender, souvenir shop, and scent experience at Kajin-no-sha.",
+      "tags": [
+        "hokkaido",
+        "furano",
+        "lavender",
+        "attraction",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 1968,
+        "quote": "ラベンダー畑で有名なファーム富田🪻"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Farm%20Tomita%2C%20Furano%2C%20Furano",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.98,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "furano_santa_no_hige",
+      "type": "cafe",
+      "name": "Santa no Hige",
+      "names": {
+        "primary": "サンタのヒゲ",
+        "en": "Santa no Hige",
+        "ja": "サンタのヒゲ",
+        "zh-Hant": "聖誕老人的鬍子"
+      },
+      "aliases": [
+        "サンタのヒゲ"
+      ],
+      "description": "Furano sweets spot for rich soft serve and soft juicy melon.",
+      "tags": [
+        "hokkaido",
+        "furano",
+        "melon",
+        "soft-serve",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 2196,
+        "quote": "美味しいメロンとソフトクリームが食べられる北海道スイーツ「サンタのヒゲ」"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Santa%20no%20Hige%2C%20Furano%2C%20Furano",
+        "source": "maps_search",
+        "geocode_status": "missing"
+      },
+      "confidence": 0.95,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "asahikawa_triton",
+      "type": "restaurant",
+      "name": "Sushi Triton",
+      "names": {
+        "primary": "回転寿しトリトン",
+        "en": "Sushi Triton",
+        "ja": "トリトン",
+        "zh-Hant": "迴轉壽司Triton"
+      },
+      "aliases": [
+        "トリトン",
+        "回転寿しトリトン"
+      ],
+      "description": "Conveyor-belt sushi chain stop after ~2.5 years; large fresh toppings, engawa, ikura, and seasonal asparagus tempura.",
+      "tags": [
+        "hokkaido",
+        "asahikawa",
+        "sushi",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 2265,
+        "quote": "約2年半ぶりのトリトンへ🍣"
+      },
+      "location": {
+        "lat": 43.7346199,
+        "lng": 142.3891095,
+        "address": "回転寿しトリトン 旭神店, 東神楽線, 旭神三条四丁目, 旭神, 緑が丘, 旭川市, 上川総合振興局, 北海道, 北海道地方, 078-8373, 日本",
+        "city": "Asahikawa",
+        "country": "JP",
+        "area": "Asahikawa"
+      },
+      "contact": {
+        "phone": "0166-60-7711",
+        "website": "https://toriton-kita1.jp/shop/kyokushin/"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.7346199,142.3891095",
+        "osm_url": "https://www.openstreetmap.org/way/198132006",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.9,
+      "needs_review": true,
+      "origin": "kol"
+    },
+    {
+      "id": "furano_curry_no_furanoya",
+      "type": "restaurant",
+      "name": "Curry no Furanoya",
+      "names": {
+        "primary": "カレーのふらのや",
+        "en": "Curry no Furanoya",
+        "ja": "カレーのふらのや",
+        "zh-Hant": "咖哩的富良野屋"
+      },
+      "aliases": [
+        "カレーのふらのや",
+        "ふらのや"
+      ],
+      "description": "Popular Furano soup curry shop; queues before opening. Rich soup with fall-apart meat and vegetables.",
+      "tags": [
+        "hokkaido",
+        "furano",
+        "soup-curry",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 2559,
+        "quote": "まずは人気のスープカレー屋さんへ！ … カレーのふらのやから車で40分ほど"
+      },
+      "location": {
+        "lat": 43.3429786,
+        "lng": 142.3826038,
+        "address": "カレーの ふらのや, 国道38号, 緑町, 末広町, 富良野市, 上川総合振興局, 北海道, 北海道地方, 076-0021, 日本",
+        "city": "Furano",
+        "country": "JP",
+        "area": "Furano"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.3429786,142.3826038",
+        "osm_url": "https://www.openstreetmap.org/node/5323641667",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol"
+    },
+    {
+      "id": "asahikawa_asahiyama_zoo",
+      "type": "attraction",
+      "name": "Asahiyama Zoo",
+      "names": {
+        "primary": "旭山動物園",
+        "en": "Asahiyama Zoo",
+        "ja": "旭山動物園",
+        "zh-Hant": "旭山動物園"
+      },
+      "aliases": [
+        "旭山動物園"
+      ],
+      "description": "Planned Day-4 stop but reopening was postponed until May; left for a future trip.",
+      "tags": [
+        "hokkaido",
+        "asahikawa",
+        "zoo",
+        "attraction",
+        "japan"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/bkFao4_YPNk",
+        "youtube_title": "【Hokkaido vlog】3泊4日の北海道グルメ旅🍜🍈🍣 札幌・旭川・富良野・美瑛観光｜おすすめホテル｜白い恋人パーク｜SHIRO本店｜締めパフェ",
+        "kol_id": "tsuke",
+        "timestamp_sec": 2519,
+        "quote": "今日から再開予定だった旭山動物園に行く予定でしたが急遽、5月まで延期となってしまいました‥😭"
+      },
+      "location": {
+        "lat": 43.7686424,
+        "lng": 142.4792729,
+        "address": "旭山動物園, 旭山道路線, 倉沼, 東旭川町日ノ出, 旭川市, 上川総合振興局, 北海道, 北海道地方, 078-8273, 日本",
+        "city": "Asahikawa",
+        "country": "JP",
+        "area": "Asahikawa"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.7686424,142.4792729",
+        "osm_url": "https://www.openstreetmap.org/way/267361081",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": true,
       "origin": "kol"
     }
   ]
