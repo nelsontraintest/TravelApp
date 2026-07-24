@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-24T16:00:54Z",
+  "updated_at": "2026-07-24T16:06:10Z",
   "kols": [
     {
       "id": "maibaru_travel",
@@ -85,12 +85,12 @@
     {
       "id": "sapporo",
       "label": "Sapporo, Hokkaido",
-      "lat": 43.065,
-      "lng": 141.3366,
+      "lat": 43.0641,
+      "lng": 141.3705,
       "city": "Sapporo",
       "country": "JP",
-      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.0650&lng=141.3366",
-      "source_youtube_url": "https://youtu.be/bkFao4_YPNk"
+      "preview_url": "https://nelsontraintest.github.io/TravelApp/web/index.html?lat=43.0641&lng=141.3705",
+      "source_youtube_url": "https://youtu.be/AupdTbxGIHU"
     },
     {
       "id": "asahikawa",
@@ -3556,6 +3556,488 @@
       "confidence": 0.95,
       "needs_review": true,
       "origin": "kol"
+    },
+    {
+      "type": "street",
+      "name": "Ganso Sapporo Ramen Yokocho",
+      "names": {
+        "primary": "元祖さっぽろラーメン横丁",
+        "en": "Ganso Sapporo Ramen Yokocho",
+        "ja": "元祖さっぽろラーメン横丁",
+        "zh-Hant": "元祖札幌拉麵橫丁"
+      },
+      "aliases": [
+        "ラーメン横丁",
+        "拉面横丁",
+        "Ramen Alley"
+      ],
+      "description": "Historic Susukino ramen alley where Araki hop-skipped three shops for miso, white shoyu, and spicy miso.",
+      "tags": [
+        "sapporo",
+        "susukino",
+        "ramen",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 26,
+        "quote": "荒木有树！拉面横丁！我在拉面横丁想去吃拉面！"
+      },
+      "location": {
+        "lat": 43.0546334,
+        "lng": 141.3543328,
+        "address": "元祖さっぽろラーメン横丁, ラーメン横丁, 南5条西3, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 064-0607, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Susukino"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0546334,141.3543328",
+        "osm_url": "https://www.openstreetmap.org/node/4524010547",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "sapporo_ganso_sapporo_ramen_yokocho"
+    },
+    {
+      "type": "restaurant",
+      "name": "Teshikaga Ramen Yokocho",
+      "names": {
+        "primary": "弟子屈ラーメン 札幌ラーメン横丁店",
+        "en": "Teshikaga Ramen Sapporo Yokocho",
+        "ja": "弟子屈ラーメン 札幌ラーメン横丁店",
+        "zh-Hant": "弟子屈拉麵 札幌拉麵橫丁店"
+      },
+      "aliases": [
+        "弟子屈ラーメン",
+        "弟子屈拉面",
+        "Teshikaga Ramen"
+      ],
+      "description": "Ramen Yokocho shop; ranked basic No.1 for fire-roasted vegetables in miso butter corn chashu ramen.",
+      "tags": [
+        "sapporo",
+        "susukino",
+        "ramen",
+        "miso",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 40,
+        "quote": "首先想去一家叫弟子屈拉面的拉面店"
+      },
+      "location": {
+        "lat": 43.0549066,
+        "lng": 141.3543046,
+        "address": "弟子屈ラーメン, 南5条西3, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 064-0805, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Ramen Yokocho"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0549066,141.3543046",
+        "osm_url": "https://www.openstreetmap.org/node/13665050633",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "sapporo_teshikaga_ramen_yokocho"
+    },
+    {
+      "type": "restaurant",
+      "name": "Higuma",
+      "names": {
+        "primary": "ひぐま",
+        "en": "Higuma",
+        "ja": "ひぐま",
+        "zh-Hant": "ひぐま"
+      },
+      "aliases": [
+        "Higuma Shoyu",
+        "ひぐま醤油"
+      ],
+      "description": "Ramen Yokocho shop; surprise No.1 for popular white shoyu ramen she wanted to bottle and take home.",
+      "tags": [
+        "sapporo",
+        "susukino",
+        "ramen",
+        "shoyu",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 105,
+        "quote": "是 Higuma Shoyu 。很好吃，是白酱油"
+      },
+      "location": {
+        "lat": 43.0698341,
+        "lng": 141.320987,
+        "address": "ひぐま, 桑園発寒通, 北11条西21, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0009, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Ramen Yokocho"
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0698341,141.320987",
+        "osm_url": "https://www.openstreetmap.org/node/5719663622",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "sapporo_higuma"
+    },
+    {
+      "type": "restaurant",
+      "name": "Tenpho",
+      "names": {
+        "primary": "天鳳",
+        "en": "Tenpho",
+        "ja": "天鳳",
+        "zh-Hant": "天鳳"
+      },
+      "aliases": [
+        "天宝拉面",
+        "天鳳ラーメン",
+        "Tenhou"
+      ],
+      "description": "Ramen Yokocho spicy miso ramen ranked punch No.1—richer and spicier than any spicy miso she had tried.",
+      "tags": [
+        "sapporo",
+        "susukino",
+        "ramen",
+        "spicy-miso",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 165,
+        "quote": "我想去这家天宝拉面！天宝的辣度最浓"
+      },
+      "location": {
+        "lat": 43.14346,
+        "lng": 141.3369967,
+        "address": "屯田春の風公園, 屯田9条5, 北区, 札幌市, 石狩振興局, 北海道, 北海道地方, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Ramen Yokocho"
+      },
+      "contact": {
+        "phone": "",
+        "website": "http://www2.wagamachi-guide.com/sapporo_koen/"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.14346,141.3369967",
+        "osm_url": "https://www.openstreetmap.org/way/472854747",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "sapporo_tenpho"
+    },
+    {
+      "type": "restaurant",
+      "name": "Asian Bar RAMAI",
+      "names": {
+        "primary": "アジアンバーラマイ",
+        "en": "Asian Bar RAMAI",
+        "ja": "アジアンバーラマイ",
+        "zh-Hant": "Asian Bar RAMAI"
+      },
+      "aliases": [
+        "Soupurry Ramai",
+        "スープカリーラマイ",
+        "ラマイ",
+        "RAMAI"
+      ],
+      "description": "Hokkaido soup-curry specialist; loaded vegetable base with egg, cheese, mushrooms, chicken, and broccoli as her signature toppings.",
+      "tags": [
+        "sapporo",
+        "soup-curry",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 244,
+        "quote": "询问汤咖喱餐厅，结果推荐了Soupurry Ramai，所以我决定来"
+      },
+      "location": {
+        "lat": 43.0152205,
+        "lng": 141.4146532,
+        "address": "RAMAI, 東月寒通, 月寒東1条17, 羊ケ丘, 豊平区, 札幌市, 石狩振興局, 北海道, 北海道地方, 062-8517, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0152205,141.4146532",
+        "osm_url": "https://www.openstreetmap.org/node/4124935589",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "sapporo_asian_bar_ramai"
+    },
+    {
+      "type": "restaurant",
+      "name": "Hachikyo Honten",
+      "names": {
+        "primary": "海味 はちきょう 本店",
+        "en": "Hachikyo Main Store",
+        "ja": "海味 はちきょう 本店",
+        "zh-Hant": "海味 はちきょう 本店"
+      },
+      "aliases": [
+        "Hachikyo",
+        "はちきょう",
+        "海味はちきょう"
+      ],
+      "description": "Seafood izakaya famous for jewel-box tsukko rice (ikura bowl) plus god-tier grape shrimp and scallops.",
+      "tags": [
+        "sapporo",
+        "susukino",
+        "seafood",
+        "ikura",
+        "izakaya",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 394,
+        "quote": "海鲜居酒屋“Hachikyo”的鲑鱼子盖饭特别惊艳"
+      },
+      "location": {
+        "lat": 43.0563655,
+        "lng": 141.3539999,
+        "address": "海味 羅臼料理 はちきょう, 都通り, 南3条西3, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0063, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": "Susukino"
+      },
+      "contact": {
+        "phone": "+81 11-222-8940",
+        "website": "https://hachikyo.com"
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0563655,141.3539999",
+        "osm_url": "https://www.openstreetmap.org/node/5603039954",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.95,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "sapporo_hachikyo_honten"
+    },
+    {
+      "type": "shop",
+      "name": "Donguri",
+      "names": {
+        "primary": "どんぐり",
+        "en": "Donguri",
+        "ja": "どんぐり",
+        "zh-Hant": "どんぐり"
+      },
+      "aliases": [
+        "Donguri-san",
+        "どんぐりさん",
+        "橡子"
+      ],
+      "description": "Sapporo soul-food bakery/deli; top picks chikuwa bread, fried mentiko onigiri (onikoro), and seasonal kuri butter.",
+      "tags": [
+        "sapporo",
+        "bakery",
+        "bread",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 534,
+        "quote": "到达了Donguri-san。他们的竹轮面包非常有名"
+      },
+      "location": {
+        "lat": 43.061522,
+        "lng": 141.4774568,
+        "address": "どんぐり, 厚別通, 厚別北3条4丁目, 厚別北, 厚別区, 札幌市, 石狩振興局, 北海道, 北海道地方, 069-0844, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.061522,141.4774568",
+        "osm_url": "https://www.openstreetmap.org/way/352784617",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.85,
+      "needs_review": true,
+      "origin": "kol",
+      "id": "sapporo_donguri"
+    },
+    {
+      "type": "restaurant",
+      "name": "Hige no Ushi",
+      "names": {
+        "primary": "ひげのうし",
+        "en": "Hige no Ushi",
+        "ja": "ひげのうし",
+        "zh-Hant": "ひげのうし"
+      },
+      "aliases": [
+        "雫之牛",
+        "Higenoushi"
+      ],
+      "description": "Jingisukan spot fans called life No.1; odorless melting lamb shoulder, tongue, and bean-sprout wraps.",
+      "tags": [
+        "sapporo",
+        "jingisukan",
+        "lamb",
+        "hokkaido"
+      ],
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 677,
+        "quote": "我要去“雫之牛”，被推荐为人生中No.1的成吉思汗烤肉"
+      },
+      "location": {
+        "lat": 43.0568094,
+        "lng": 141.3512673,
+        "address": "ひげのうし, 南3条通, 南3条西5, 狸小路, 中央区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0063, 日本",
+        "city": "Sapporo",
+        "country": "JP",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=43.0568094,141.3512673",
+        "osm_url": "https://www.openstreetmap.org/node/5208155427",
+        "source": "osm",
+        "geocode_status": "resolved"
+      },
+      "confidence": 0.9,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "sapporo_hige_no_ushi"
+    },
+    {
+      "type": "person",
+      "name": "Yuko Araki",
+      "names": {
+        "primary": "新木優子",
+        "en": "Yuko Araki",
+        "ja": "新木優子",
+        "zh-Hant": "新木優子"
+      },
+      "aliases": [
+        "YUKO ARAKI",
+        "荒木有树"
+      ],
+      "description": "Actress and KOL behind あらきあるき; ate 21 fan-recommended Sapporo dishes in this vlog.",
+      "tags": [
+        "kol",
+        "japan",
+        "actress"
+      ],
+      "person": {
+        "role": "kol",
+        "bio": "Japanese actress; YouTube/Instagram series あらきあるき.",
+        "related_places": []
+      },
+      "source": {
+        "youtube_url": "https://youtu.be/AupdTbxGIHU",
+        "youtube_title": "【札幌グルメ】つっこ飯からスープカレーまで！人気21品を食べ尽くし🍜 | Sapporo Food Vlog",
+        "kol_id": "yuko_araki",
+        "timestamp_sec": 0,
+        "quote": "新木優子 / YUKO ARAKI"
+      },
+      "location": {
+        "lat": null,
+        "lng": null,
+        "address": "",
+        "city": "",
+        "country": "JP",
+        "area": ""
+      },
+      "contact": {
+        "phone": "",
+        "website": ""
+      },
+      "enrichment": {
+        "rating": null,
+        "photos": [],
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Yuko%20Araki",
+        "geocode_status": "missing",
+        "source": "maps_search"
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "origin": "kol",
+      "id": "unknown_yuko_araki"
     }
   ]
 }
